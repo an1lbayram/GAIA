@@ -1,0 +1,11 @@
+{
+  "name": "quiz-app-root",
+  "version": "1.0.0",
+  "description": "Root wrapper for the quiz app to forward commands",
+  "scripts": {
+    "dev": "cd quiz-app && npm run dev",
+    "start": "cd quiz-app && npm run dev",
+    "install": "cd quiz-app && npm install",
+    "build": "cd quiz-app && npm run build"
+  }
+}

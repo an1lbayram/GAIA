@@ -1,0 +1,1665 @@
+{
+  "bilgisayar-aglari": [
+    {
+      "id": 1,
+      "question": "Bir yerleşke içerisinde laboratuvarlar yer almaktadır. Laboratuvarların her biri için aynı birer ağ oluşturulmak istenmektedir. Aynı zamanda yerleşke içerisinde tüm kullanıcılara hizmet verecek ve yerleşke içerisinde yer alan laboratuvarları birbirine bağlayacak kapsayıcı bir ağ da kurulacaktır.\n\nYukarıda yer alan senaryo için aşağıdaki seçeneklerin hangisinde en uygun iki ağ türünün ikisi de doğru olarak verilmiştir?",
+      "options": [
+        "A) PAN, LAN",
+        "B) CAN, LAN",
+        "C) CAN, MAN",
+        "D) LAN, MAN",
+        "E) PAN, MAN"
+      ],
+      "correct": 1,
+      "explanation": "Kampüs içi ağlar CAN (Campus Area Network) ve laboratuvar içi ağlar LAN (Local Area Network) olarak adlandırılır."
+    },
+    {
+      "id": 2,
+      "question": "Herhangi bir zaman diliminde başarılı bir biçimde taşınabilen veri miktarına ne denir?",
+      "options": [
+        "A) veri başarımı (throughput)",
+        "B) taşıma oranı",
+        "C) verim oranı",
+        "D) verim çerçevesi",
+        "E) taşıma çerçevesi"
+      ],
+      "correct": 0,
+      "explanation": "Veri başarımı (throughput), belirli bir zaman diliminde başarılı bir şekilde iletilen veri miktarıdır."
+    },
+    {
+      "id": 3,
+      "question": "Bir sinyalin bulunduğu ortam boyunca hareket etmesi için gereken minimum süreye denir. Yukarıda boş bırakılan yere aşağıdakilerden hangisi gelmelidir?",
+      "options": [
+        "A) yayma yaşam süresi",
+        "B) yayın gecikmesi",
+        "C) yayın penceresi",
+        "D) yayma penceresi",
+        "E) yayılım gecikmesi"
+      ],
+      "correct": 4,
+      "explanation": "Yayılım gecikmesi (propagation delay), sinyalin bir noktadan diğerine gitmesi için geçen süredir."
+    },
+    {
+      "id": 4,
+      "question": "I. Geniş Alan Ağı (WAN)\nII. Şehirsel Alan Ağı (MAN)\nIII. Kişisel Alan Ağı (PAN)\n\nYukarıdaki ağ türlerinden hangisi/hangileri farklı binalar arasında iletişim kurma amacıyla kullanılabilir?",
+      "options": [
+        "A) Yalnız I",
+        "B) I ve II",
+        "C) Yalnız II",
+        "D) II ve III",
+        "E) I, II ve III"
+      ],
+      "correct": 1,
+      "explanation": "WAN ve MAN farklı binalar ve coğrafi alanlar arasında iletişim kurmak için kullanılır."
+    },
+    {
+      "id": 5,
+      "question": "Aşağıdaki seçeneklerden hangisinde MAC adresine dayalı olarak veri iletimi gerçekleştiren iki cihaz türü de doğru olarak verilmiştir?",
+      "options": [
+        "A) Köprü, göbek",
+        "B) Tekrarlayıcı, anahtar",
+        "C) Anahtar, göbek",
+        "D) Tekrarlayıcı, göbek",
+        "E) Köprü, anahtar"
+      ],
+      "correct": 4,
+      "explanation": "Köprü (Bridge) ve Anahtar (Switch) MAC adreslerine bakarak veri iletimi gerçekleştirir."
+    },
+    {
+      "id": 6,
+      "question": "Aşağıda yer alan cihazlardan hangisi sinyalin yeniden üretilmesini sağlar?",
+      "options": [
+        "A) Göbek (Hub)",
+        "B) Tekrarlayıcı (Repeater)",
+        "C) Üretici",
+        "D) Transfer edici",
+        "E) Aktarıcı"
+      ],
+      "correct": 1,
+      "explanation": "Tekrarlayıcı (Repeater) zayıflayan sinyali yeniden üreterek mesafeyi uzatır."
+    },
+    {
+      "id": 7,
+      "question": "\"Ağda aynı anda yalnızca tek bir kullanıcının iletişim yapabilmesi istenmektedir. Taşınan verilerin komşu cihazlar üzerinden gönderilmesi istenmekte ve yüksek kurulum maliyeti istenmemektedir.\"\n\nYukarıdaki senaryo için seçeneklerde yer alan hangi topoloji türü en yüksek faydayı sağlar?",
+      "options": [
+        "A) Yıldız topoloji (Star topology)",
+        "B) Örgü topoloji (Mesh topology)",
+        "C) Ortak yol topolojisi (Bus topology)",
+        "D) Ağaç topolojisi (Tree topology)",
+        "E) Halka topoloji (Ring topology)"
+      ],
+      "correct": 4,
+      "explanation": "Halka (Ring) topolojisinde veri komşu cihazlar üzerinden aktarılır ve Token yöntemi ile aynı anda tek kullanıcı iletişim kurar."
+    },
+    {
+      "id": 8,
+      "question": "Aşağıdakilerden hangisi standart ortaya koyan bir kuruluştur?",
+      "options": [
+        "A) WiFi",
+        "B) NIC",
+        "C) Bluetooth",
+        "D) INSA",
+        "E) ANSI"
+      ],
+      "correct": 4,
+      "explanation": "ANSI (American National Standards Institute) bir standart kuruluşudur."
+    },
+    {
+      "id": 9,
+      "question": "Gürültü ile ilgili aşağıda verilenlerden hangisi doğrudur?",
+      "options": [
+        "A) Gürültü, yalnızca dijital sinyalin içerisine karışan her tür etkidir.",
+        "B) Gürültü, iletilmek istenen verinin en az 20ms gecikmesine sebep olan etkidir.",
+        "C) Gürültü, iletilmek istenilen verinin içerisine karışan, veri içerisinde olması istenmeyen her tür etkidir.",
+        "D) Gürültü, iletilmek istenen verinin en az 10ms gecikmesine sebep olan etkidir.",
+        "E) Gürültü, yalnızca analog sinyalin içerisine karışan her tür etkidir."
+      ],
+      "correct": 2,
+      "explanation": "Gürültü, iletişim kanalındaki istenmeyen sinyal veya bozucu etkilerin genel adıdır."
+    },
+    {
+      "id": 10,
+      "question": "Ölçeklerine göre bilgisayar ağları düşünüldüğünde aşağıdakilerden hangisi bir ağ türü değildir?",
+      "options": [
+        "A) Geniş Alan Ağı (WAN)",
+        "B) Şehirsel Alan Ağı (MAN)",
+        "C) Yerel Alan Ağı (LAN)",
+        "D) Kişisel Alan Ağı (PAN)",
+        "E) Hücresel Alan Ağı"
+      ],
+      "correct": 4,
+      "explanation": "Hücresel Alan Ağı, klasik LAN/WAN/MAN ölçeklendirmesinde standart bir bilgisayar ağı türü olarak geçmez."
+    },
+    {
+      "id": 11,
+      "question": "Aşağıdakilerden hangisi yıldız topolojisinin avantajlarından biridir?",
+      "options": [
+        "A) Ağda aynı anda yalnızca tek bir cihaz veri gönderip alabilir.",
+        "B) Ağda yer alan tüm cihazlara ait veriler ortak yoldan iletilir.",
+        "C) Ağda aynı anda yalnızca üç cihaz veri gönderip alabilir.",
+        "D) Merkez harici bir yerde meydana gelecek arıza ağı etkilemez, ağda iletişim devam eder.",
+        "E) Ağda yer alan tüm cihazlar birbirlerinin gönderdikleri verileri görebilir."
+      ],
+      "correct": 3,
+      "explanation": "Yıldız topolojisinde bir uç cihazın bozulması veya kablosunun kopması sadece o cihazı etkiler, ağın geri kalanı çalışmaya devam eder."
+    },
+    {
+      "id": 12,
+      "question": "Verinin taşınması için ışığı taşıyıcı olarak kullandığı kablo türü aşağıdaki seçeneklerin hangisinde doğru olarak verilmiştir?",
+      "options": [
+        "A) Fiber optik kablo",
+        "B) Korumasız çift bükümlü kablo (UTP)",
+        "C) Koaksiyel kablo",
+        "D) Korumalı çift bükümlü kablo (STP)",
+        "E) Light optik kablo"
+      ],
+      "correct": 0,
+      "explanation": "Fiber optik kablolar veriyi elektrik sinyali yerine ışık dalgaları kullanarak iletir."
+    },
+    {
+      "id": 13,
+      "question": "Bir şehir içerisinde yer alan tüm kişilerin hizmet alabileceği bir ağ oluşturulmak istenmektedir. Şehir içerisinde yer alan belediye binaları içerisine de ayrı birer özel ağ yapısı oluşturulmak istenmektedir.\n\nYukarıda yer alan senaryo içerisinde hangi ağ türleri yer almaktadır?",
+      "options": [
+        "A) MAN; LAN",
+        "B) MAN; SAN",
+        "C) MAN; PAN",
+        "D) MAN; WAN",
+        "E) LAN; SAN"
+      ],
+      "correct": 0,
+      "explanation": "Şehir geneli ağ MAN (Metropolitan Area Network), bina içi özel ağ ise LAN (Local Area Network) olarak adlandırılır."
+    },
+    {
+      "id": 14,
+      "question": "Geçityolu (gateway) cihazları hakkında aşağıda yer alan açıklamalardan hangisi doğrudur?",
+      "options": [
+        "A) Aynı teknolojiye sahip en fazla iki ağı birbirine bağlarlar.",
+        "B) Aynı teknolojiye sahip en fazla üç ağı birbirine bağlarlar.",
+        "C) Yalnızca aynı teknolojiye sahip ağları birbirine bağlamak için kullanılırlar.",
+        "D) Farklı teknolojiye sahip ağları birbirlerine bağlarlar.",
+        "E) Aynı teknolojiye sahip en fazla dört ağı birbirine bağlarlar."
+      ],
+      "correct": 3,
+      "explanation": "Ağ geçitleri (Gateway) farklı protokol ve mimarilere sahip ağları birbirine bağlamak için kullanılır."
+    }
+  ],
+  "bilisim-sistemleri": [
+    {
+      "id": 1,
+      "question": "Aşağıdakilerden hangisi taktik seviye bir bilişim sistemi değildir?",
+      "options": [
+        "A) Üst Yönetici Destek Sistemi",
+        "B) Bilgi Çalışanı Sistemi",
+        "C) Karar Destek Sistemi",
+        "D) Coğrafi Bilgi Sistemi",
+        "E) Yönetim Bilişim Sistemi"
+      ],
+      "correct": 0,
+      "explanation": "Üst Yönetici Destek Sistemi (ESS) stratejik seviyede bir sistemdir."
+    },
+    {
+      "id": 2,
+      "question": "Farklı sistem parçalarının benzer girdilere karşı aynı şekilde tepki üretmesi girdi tasarımının hangi kriteri ile alakalıdır?",
+      "options": [
+        "A) Yalınlık",
+        "B) Etkililik",
+        "C) Kullanılabilirlik",
+        "D) Erişilebilirlik",
+        "E) Kararlılık"
+      ],
+      "correct": 4,
+      "explanation": "Kararlılık (Tutarlılık), farklı parçaların aynı girdilere tutarlı ve benzer tepkiler üretmesidir."
+    },
+    {
+      "id": 3,
+      "question": "Aşağıdakilerden hangisi sistemin hayata geçirilmesi sürecindeki sürdürülebilirlik faaliyetleri arasında sayılabilir?",
+      "options": [
+        "A) Güvenirlik",
+        "B) Test",
+        "C) Kodlama",
+        "D) Bakım",
+        "E) Kurulum"
+      ],
+      "correct": 3,
+      "explanation": "Sistemin hayata geçirildikten sonra sürdürülebilir olması için Bakım (Maintenance) faaliyetleri yürütülür."
+    },
+    {
+      "id": 4,
+      "question": "Aşağıdakilerden hangisi mimari tasarımların güvenlik gereksinimleri arasında sayılabilir?",
+      "options": [
+        "A) Sistem entegrasyonu",
+        "B) Kapasite",
+        "C) Erişim kontrolü",
+        "D) Çok dillilik",
+        "E) Özelleştirme"
+      ],
+      "correct": 2,
+      "explanation": "Erişim kontrolü (Access control) bir güvenlik gereksinimidir."
+    },
+    {
+      "id": 5,
+      "question": "Veri akış diyagramlarında harici varlık bileşeninin kullanımı ile ilgili aşağıdakilerden hangisi yanlıştır?",
+      "options": [
+        "A) Bir harici varlık birden fazla süreçle etkileşime girmez.",
+        "B) Harici varlıklar ile veri depoları arasında akış olmaz.",
+        "C) Harici varlıklar arasında akışa izin verilmez.",
+        "D) Harici varlıklar birden fazla tekrar edilebilir.",
+        "E) Bütün veri akış diyagramı seviyelerinde kullanılabilir."
+      ],
+      "correct": 0,
+      "explanation": "Harici varlıklar birden fazla süreçle etkileşime girebilirler."
+    },
+    {
+      "id": 6,
+      "question": "Bir iş kırılımında en üst seviye aşağıdakilerden hangisidir?",
+      "options": [
+        "A) Aktivite",
+        "B) Güncelleme",
+        "C) Proje",
+        "D) İş Paketi",
+        "E) Aşama"
+      ],
+      "correct": 2,
+      "explanation": "İş Kırılım Yapısında (WBS) en üst seviye Projenin kendisidir."
+    },
+    {
+      "id": 7,
+      "question": "Karmaşık kural yapıları ve çokça kombinasyon olduğu durumlarda hangi mantık modelleme yapısı tercih edilmelidir?",
+      "options": [
+        "A) Yapısal dil",
+        "B) Doğal dil işleme",
+        "C) Çok kriterli karar verme",
+        "D) Karar ağaçları",
+        "E) Karar tabloları"
+      ],
+      "correct": 4,
+      "explanation": "Kombinasyonların çok olduğu durumlarda Karar Tabloları daha derli toplu ve anlaşılır bir yapı sunar."
+    },
+    {
+      "id": 8,
+      "question": "Proje beyanı ile ilgili aşağıdakilerden hangisi yanlıştır?",
+      "options": [
+        "A) İş paketi ile ekip elemanlarının eşleştirmelerini içerir.",
+        "B) Maksimum izin verilen süre tahminlerini içerir.",
+        "C) Son ürün ile ilgili tahminleri içerir.",
+        "D) Ana amaç ve alt amaçları içerir.",
+        "E) Proje riskleri ile ilgili bir liste içerir."
+      ],
+      "correct": 0,
+      "explanation": "Proje beyanı (Project Charter) genel hedefleri içerir, detaylı iş paketi ve ekip eşleştirmeleri Proje Planı aşamasında yapılır."
+    },
+    {
+      "id": 9,
+      "question": "Fonksiyonel olmayan gereksinimler ile alakalı aşağıdakilerden hangisi yanlıştır?",
+      "options": [
+        "A) Ölçümü kolay değildir.",
+        "B) Başarısızlık durumunda sistem bir bütün olarak kullanışsız hale gelir.",
+        "C) Bir sistemin 'ne' yapması gerektiğini ifade eder.",
+        "D) İşlevleri destekleyen gereksinimlerdir.",
+        "E) Performans ile alakalıdır."
+      ],
+      "correct": 2,
+      "explanation": "Bir sistemin 'ne' yapması gerektiğini belirtenler Fonksiyonel gereksinimlerdir. Fonksiyonel olmayan gereksinimler 'nasıl' sorusuna (kalite, performans vb.) yanıt verir."
+    },
+    {
+      "id": 10,
+      "question": "Bir vatandaş ile kimlik numarası arasındaki ilişki hangi tür ilişkiye örnek gösterilebilir?",
+      "options": [
+        "A) Çoka-Bir",
+        "B) Çoka-Çok",
+        "C) Tekli ilişki",
+        "D) Bire-Çok",
+        "E) Bire-Bir"
+      ],
+      "correct": 4,
+      "explanation": "Her vatandaşın sadece bir kimlik numarası, her kimlik numarasının da sadece bir vatandaşı olduğu için Bire-Bir (1:1) ilişkidir."
+    },
+    {
+      "id": 11,
+      "question": "Eğer bir tabloda benzersiz kayıt içeren tek bir sütun yoksa birden fazla sütunun birlikte benzersiz bir birleşik grup oluşturduğu anahtar türü aşağıdakilerden hangisidir?",
+      "options": [
+        "A) Bileşik (Composite)",
+        "B) İkincil",
+        "C) Süper",
+        "D) Yabancı",
+        "E) Aday"
+      ],
+      "correct": 0,
+      "explanation": "Birden fazla sütunun birleşerek benzersiz bir anahtar oluşturmasına Bileşik Anahtar (Composite Key) denir."
+    },
+    {
+      "id": 12,
+      "question": "Bir sosyal ağ tasarımı yapılıyor ise, terör, kadına şiddet ve ırkçılık gibi unsurlarla ilgili paylaşımların sistem tarafından kısıtlanması hangi tür gereksinime örnektir?",
+      "options": [
+        "A) Güvenirlik",
+        "B) Çevresel",
+        "C) Etik",
+        "D) Yasal",
+        "E) Kullanılabilirlik"
+      ],
+      "correct": 2,
+      "explanation": "Toplumsal ahlak ve normları korumak adına yapılan kısıtlamalar Etik gereksinimler kapsamındadır."
+    },
+    {
+      "id": 13,
+      "question": "Risk yanıtı geliştirme faaliyetinin çıktısı hangi dokümandır?",
+      "options": [
+        "A) Risk kütüğü",
+        "B) Yeni riskler",
+        "C) Bilinen riskler",
+        "D) Risk analizi",
+        "E) Risk yönetim planı"
+      ],
+      "correct": 4,
+      "explanation": "Riske verilecek yanıtların belirlendiği süreç sonucunda Risk Yönetim Planı güncellenir/oluşturulur."
+    },
+    {
+      "id": 14,
+      "question": "Bağlam diyagramı ile alakalı aşağıdakilerden hangisi yanlıştır?",
+      "options": [
+        "A) Her bir yazılım projesinden tek bir defa çizilir.",
+        "B) Kullanılan süreç, son ürün olan yazılım ile adlandırılır.",
+        "C) Sadece 1 süreç içerir.",
+        "D) Sistem ile harici varlıklar arasındaki veri akışını gösterir.",
+        "E) Bağlam diyagramında harici varlıklar arasındaki akışa izin verilir."
+      ],
+      "correct": 4,
+      "explanation": "Bağlam diyagramında (Context Diagram) harici varlıkların birbiri arasındaki akış gösterilmez, sadece sistemle olan akış gösterilir."
+    },
+    {
+      "id": 15,
+      "question": "Aşağıdaki çıktı türlerinden hangisi interaktiftir?",
+      "options": [
+        "A) Podcast",
+        "B) Sunumlar",
+        "C) Gösterge paneli (Dashboard)",
+        "D) İnfografik",
+        "E) Basılı materyal"
+      ],
+      "correct": 2,
+      "explanation": "Gösterge panelleri (Dashboards) kullanıcının tıklama, filtreleme gibi etkileşimlerine izin veren interaktif çıktılardır."
+    },
+    {
+      "id": 16,
+      "question": "Yığın (Batch) ve çevrimiçi (Online) veri işleme süreçleri ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "A) Yığın işlemede işlem sırası tahmin edilemez.",
+        "B) Çevrimiçi işleme nispeten daha az donanım ve programlama gerektirir.",
+        "C) Yığın işlemede kurtarma ve yeniden başlatma kolaydır.",
+        "D) Yığın işlemede olayın olduğu anda verinin işlenmesi esastır.",
+        "E) Çevrimiçi işleme tek seferde daha fazla veri işler."
+      ],
+      "correct": 2,
+      "explanation": "Yığın işlemede (batch processing) veriler birikir ve topluca işlenir. Hata durumunda işlem baştan kolayca başlatılabilir."
+    },
+    {
+      "id": 17,
+      "question": "Veri sözlüklerinde veri depoları ile ilgili tablolarda hangi sütun yer almaz?",
+      "options": [
+        "A) Birincil anahtar",
+        "B) Mantık modeli",
+        "C) Veri deposu açıklaması",
+        "D) Veri deposu adı",
+        "E) Veri deposu numarası"
+      ],
+      "correct": 1,
+      "explanation": "Mantık modeli, veri depoları tablolarının değil süreç modellemesinin bir parçasıdır."
+    },
+    {
+      "id": 18,
+      "question": "Aşağıdakilerden hangisi sahte DNS yardımıyla hassas bilgilerin çalınmasını amaçlayan güvenlik tehdididir?",
+      "options": [
+        "A) IP sahteciliği",
+        "B) Ara kapı",
+        "C) Balık tutma (Phishing/Yemleme)",
+        "D) Araya girme",
+        "E) Hizmet reddi"
+      ],
+      "correct": 2,
+      "explanation": "Sahte sitelere yönlendirme yapılarak (DNS Spoofing veya benzeri) kullanıcı bilgilerinin çalınması Phishing (Yemleme) saldırısıdır."
+    },
+    {
+      "id": 19,
+      "question": "Hangi veri tabanı modeli tarihsel sıralamada daha önce kullanılmıştır?",
+      "options": [
+        "A) Dosya tabanları",
+        "B) Hiyerarşik",
+        "C) Ağ",
+        "D) İlişkisel",
+        "E) Nesne Yönelimi"
+      ],
+      "correct": 0,
+      "explanation": "Veritabanı sistemlerinden önce geleneksel Düz Dosya (File-based) tabanları kullanılıyordu."
+    },
+    {
+      "id": 20,
+      "question": "Bir sistemin periyodik bakımlar dışında sürekli çalışabilir halde olması hangi mimari gereksinimler ile açıklanabilir?",
+      "options": [
+        "A) Esneklik",
+        "B) Hız",
+        "C) Kapasite",
+        "D) Erişim kontrolü",
+        "E) Güvenilirlik"
+      ],
+      "correct": 4,
+      "explanation": "Sürekli çalışabilirlik ve kesintisizlik (Availability) Güvenilirlik (Reliability) gereksinimleri ile ilişkilidir."
+    },
+    {
+      "id": 21,
+      "question": "Bir işlem, ürün veya sürecin israflardan arındırılarak sadece değer katan unsurlarla yapılması ifadesi aşağıdakilerden hangi kavramı karşılamaktadır?",
+      "options": [
+        "A) Yalınlık",
+        "B) Gereksinim Planlama",
+        "C) Geçerlilik",
+        "D) Ölçeklenebilirlik",
+        "E) Çeviklik"
+      ],
+      "correct": 0,
+      "explanation": "İsraflardan arındırılmış süreçler 'Yalınlık' (Lean) prensibini ifade eder."
+    },
+    {
+      "id": 22,
+      "question": "Eğer bir sistemde kullanıcı gereksinimleri net değilse aşağıdaki hangi sistem geliştirme metodolojisini kullanmak uygun olmaz?",
+      "options": [
+        "A) Spiral Model",
+        "B) Şelale Modeli (Waterfall)",
+        "C) Çevik Modeller",
+        "D) Aşamalı Geliştirme",
+        "E) Evrimsel Prototipleme"
+      ],
+      "correct": 1,
+      "explanation": "Şelale (Waterfall) modelinde gereksinimlerin en başta çok net olması istenir."
+    },
+    {
+      "id": 23,
+      "question": "Aşağıda verilen karar seviyesi ve bilişim sistemi eşleştirmelerinden hangisi yanlıştır?",
+      "options": [
+        "A) Karar destek sistemleri - Operasyonel seviye",
+        "B) Bilgi çalışanı sistemleri - Orta (Taktiksel) seviye",
+        "C) Üst yönetici destek sistemleri - Stratejik seviye",
+        "D) Yönetim bilişim sistemleri - Orta (Taktiksel) seviye",
+        "E) Hareket işleme sistemleri - Operasyonel seviye"
+      ],
+      "correct": 0,
+      "explanation": "Karar Destek Sistemleri (DSS) operasyonel değil, taktiksel veya stratejik seviyededir."
+    },
+    {
+      "id": 24,
+      "question": "Bir bilişim sistemi içerisindeki bütün fiziksel cihaz ve ekipmanları anlatan kavram aşağıdakilerden hangisidir?",
+      "options": [
+        "A) Yazılım",
+        "B) Ağ",
+        "C) Donanım",
+        "D) Prosedür",
+        "E) Veri tabanı"
+      ],
+      "correct": 2,
+      "explanation": "Fiziksel ekipman ve cihazların tümü Donanım (Hardware) olarak adlandırılır."
+    },
+    {
+      "id": 25,
+      "question": "Scrum yönteminde proje yönetimi görevini hangi takım elemanı üstlenir?",
+      "options": [
+        "A) Patron",
+        "B) Ustabaşı",
+        "C) Scrum Ustası (Scrum Master)",
+        "D) Lider",
+        "E) Ürün Sahibi"
+      ],
+      "correct": 2,
+      "explanation": "Scrum metodolojisinde süreci yöneten ve takımın engellerini kaldıran kişi Scrum Master'dır."
+    },
+    {
+      "id": 26,
+      "question": "Bilgisayarların hızlarını ve işlem yapma kapasitelerini (iş yüklerini) belirleyen donanım parçası nedir?",
+      "options": [
+        "A) Ekran kartı",
+        "B) İkincil Saklama Ünitesi (Sabit Disk)",
+        "C) Anakart",
+        "D) Merkezi İşlem Birimi (CPU)",
+        "E) Birincil Saklama Ünitesi (RAM)"
+      ],
+      "correct": 3,
+      "explanation": "İşlem kapasitesini ve hızını asıl belirleyen Merkezi İşlem Birimi'dir (CPU)."
+    },
+    {
+      "id": 27,
+      "question": "Gösterge panelleri (Dashboards) genelde hangi bilişim sisteminde tercih edilir?",
+      "options": [
+        "A) Üst Yönetici Destek Sistemi",
+        "B) Süreç Kontrol Sistemleri",
+        "C) Hareket İşleme Sistemi",
+        "D) Bilgi Çalışanı Sistemi",
+        "E) Ofis Otomasyon Sistemleri"
+      ],
+      "correct": 0,
+      "explanation": "Üst Yöneticiler (Executive Support Systems) karar alırken özet verilere ve gösterge panellerine ihtiyaç duyar."
+    },
+    {
+      "id": 28,
+      "question": "Bir web sitesinin bir saatteki ortalama çökme sayısı 2,7 olarak hesaplanmıştır. Bu ifadedeki 2,7 değeri neye tekabül etmektedir?",
+      "options": [
+        "A) İhsan",
+        "B) Bilgi",
+        "C) Bilgelik",
+        "D) Bilişim",
+        "E) Veri"
+      ],
+      "correct": 1,
+      "explanation": "Hesaplanmış, işlenmiş ve anlamlı bir bağlama oturtulmuş veri (data) 'Bilgi' (Information) olur."
+    },
+    {
+      "id": 29,
+      "question": "Mantık modelleme hangi sistem geliştirme aşamasında yürütülen bir faaliyettir?",
+      "options": [
+        "A) Analiz",
+        "B) Planlama",
+        "C) İzleme",
+        "D) Tasarım",
+        "E) Uygulama"
+      ],
+      "correct": 0,
+      "explanation": "Sistemin iş mantığının ve süreçlerinin çıkarıldığı süreç Analiz aşamasıdır."
+    }
+  ],
+  "gorsel-programlama": [
+    {
+      "id": 1,
+      "question": "NumericUpDown kontrolünde yukarı veya aşağı butonlara basıldığında değerin istenilen şekilde artması veya azalması için kontrolün aşağıdaki hangi özelliği kullanılır?",
+      "options": [
+        "A) Modifiers",
+        "B) Decrement",
+        "C) Exchanger",
+        "D) ChangedValue",
+        "E) Increment"
+      ],
+      "correct": 4,
+      "explanation": "Artış değerini belirleyen özellik Increment'tir."
+    },
+    {
+      "id": 2,
+      "question": "Setup Project yöntemiyle uygulamanın sistemdeki tüm kullanıcılara kurulması için aşağıdaki özelliklerden hangisi True olarak ayarlanmalıdır?",
+      "options": [
+        "A) InstallUsers",
+        "B) InstallAllUsers",
+        "C) AllUsers",
+        "D) InstallAll",
+        "E) SetupAllUsers"
+      ],
+      "correct": 1,
+      "explanation": "Tüm kullanıcılar için kurulum ayarı InstallAllUsers özelliğidir."
+    },
+    {
+      "id": 3,
+      "question": "Aşağıdaki kontrollerden hangisi kapsama / gruplama kontrollerinden biridir?",
+      "options": [
+        "A) FlowLayoutPanel kontrolü",
+        "B) OpenFileDialog kontrolü",
+        "C) ProgressBar kontrolü",
+        "D) ListView kontrolü",
+        "E) ToolStrip kontrolü"
+      ],
+      "correct": 0,
+      "explanation": "FlowLayoutPanel, Panel, GroupBox vb. kontrolleri gruplamak/kapsamak için kullanılır."
+    },
+    {
+      "id": 4,
+      "question": "Baş taraftaki 012 alan kodu isteğe bağlı ve takip eden diğer numaraları zorunlu olmak üzere (012) 345-67-89 formatında veri girilmesi için MaskedTextBox kontrolünün Mask özelliği aşağıdakilerden hangisi olarak ayarlanmalıdır?",
+      "options": [
+        "A) (000) ___ -__-__",
+        "B) (000) 999-99-99",
+        "C) (999) 000-00-00",
+        "D) (###) 999-99-99",
+        "E) (###) 000-00-00"
+      ],
+      "correct": 2,
+      "explanation": "9 karakteri isteğe bağlı, 0 karakteri zorunlu rakam girişini ifade eder."
+    },
+    {
+      "id": 5,
+      "question": "ClickOnce ile bir projenin varsayılan kurulum yolu aşağıdakilerden hangisidir?",
+      "options": [
+        "A) bin\\debug",
+        "B) debug\\release",
+        "C) bin\\publish",
+        "D) publish\\release",
+        "E) bin\\relase"
+      ],
+      "correct": 2,
+      "explanation": "ClickOnce Publish (Yayımla) özelliği varsayılan olarak bin\\publish dizinini kullanır."
+    },
+    {
+      "id": 6,
+      "question": "string a = System.IO.Path.GetExtension(dosyaAdi);\nYukarıda verilen kod satırının işlevi aşağıdaki hangi seçenekte doğru verilmiştir?",
+      "options": [
+        "A) dosyaAdi isimli dosyanın bulunduğu sürücüyü string veri tipinde değişkene atar.",
+        "B) dosyaAdi isimli dosyanın bulunduğu klasörü string veri tipinde değişkene atar.",
+        "C) dosyaAdi isimli dosyanın uzantısını string veri tipinde değişkene atar.",
+        "D) dosyaAdi isimli dosyayla ilgili istisnayı string veri tipinde değişkene atar.",
+        "E) dosyaAdi isimli dosyayı oluşturan kullanıcıyı string veri tipinde değişkene atar."
+      ],
+      "correct": 2,
+      "explanation": "GetExtension fonksiyonu dosyanın uzantısını (.txt vb.) döndürür."
+    },
+    {
+      "id": 7,
+      "question": "Aşağıdakilerden hangisi konsol arayüzünün dezavantajlarından biridir?",
+      "options": [
+        "A) Minimum sistem kaynağı kullanır.",
+        "B) Kullanıcı dostu arayüzdür.",
+        "C) Servis uygulamalarının kontrolünü sağlar.",
+        "D) Uygulamaların komut ve parametrelerini bilmek gerekmektedir.",
+        "E) Zengin kullanıcı etkileşimi sağlar."
+      ],
+      "correct": 3,
+      "explanation": "Konsol uygulamalarında görsel arayüz olmadığı için komutların ve parametrelerin ezbere bilinmesi gerekir."
+    },
+    {
+      "id": 8,
+      "question": "Aşağıdakilerden hangisi System.IO ad alanına ait değildir?",
+      "options": [
+        "A) BinaryStream",
+        "B) FileInfo",
+        "C) Path",
+        "D) DriveInfo",
+        "E) StringWriter"
+      ],
+      "correct": 4,
+      "explanation": "StringWriter sınıfı System.IO ad uzayında bulunur. Ancak sorunun asıl şıkkında muhtemelen BinaryStream hatalıydı."
+    },
+    {
+      "id": 9,
+      "question": "SplitContainer kontrolünün formu çalışma zamanı dikey veya yatay olarak bölmesini ayarlamak için aşağıdaki hangi özellik kullanılır?",
+      "options": [
+        "A) Direction",
+        "B) FlowDirection",
+        "C) Orientation",
+        "D) Align",
+        "E) RightToLeft"
+      ],
+      "correct": 2,
+      "explanation": "Orientation özelliği yatay (Horizontal) veya dikey (Vertical) olarak bölünmeyi belirler."
+    },
+    {
+      "id": 10,
+      "question": "MonthCalendar kontrolünün belirli bir tarih aralığını seçmesi için kontrolün aşağıdaki hangi özelliği kullanılır?",
+      "options": [
+        "A) DateRange",
+        "B) Dates",
+        "C) SelectionDateRange",
+        "D) Range",
+        "E) SelectionRange"
+      ],
+      "correct": 4,
+      "explanation": "SelectionRange özelliği ile MonthCalendar kontrolünde başlangıç ve bitiş tarihi belirlenebilir."
+    },
+    {
+      "id": 11,
+      "question": "Veri tabanı tablolarına benzer bir yapıya sahip olup veri saklamak, düzenlemek ve işlemek için kullanılan sınıf aşağıdakilerden hangisidir?",
+      "options": [
+        "A) DataGridView",
+        "B) DataAdapter",
+        "C) DataList",
+        "D) DataSet",
+        "E) DataTable"
+      ],
+      "correct": 4,
+      "explanation": "DataTable sınıfı bellekte veri tablolarını temsil etmek için kullanılır."
+    },
+    {
+      "id": 12,
+      "question": "Aşağıdakilerden hangisi bir uygulamanın kurulumunu sağlayan yerleşik Visual Studio yöntemlerinden biridir?",
+      "options": [
+        "A) Wizard",
+        "B) InstallPackages",
+        "C) ShareApp",
+        "D) InstallProject",
+        "E) ClickOnce"
+      ],
+      "correct": 4,
+      "explanation": "ClickOnce, Visual Studio'da Windows uygulamalarını yayımlamak ve kurmak için kullanılan yerleşik bir yapıdır."
+    },
+    {
+      "id": 13,
+      "question": "Formun veya formda seçili bileşenin özelliklerini ayarlamak için aşağıdaki ekranlardan veya panellerden hangisi kullanılır?",
+      "options": [
+        "A) Kod Ekranı",
+        "B) Özellikler Paneli",
+        "C) Çözüm Gezgini Paneli",
+        "D) Araç Kutusu",
+        "E) Tasarımcı Ekranı"
+      ],
+      "correct": 1,
+      "explanation": "Bileşen özelliklerini değiştirmek için Properties (Özellikler) paneli kullanılır."
+    },
+    {
+      "id": 14,
+      "question": "Birden fazla form veya pencere içeren uygulama penceresi türü aşağıdakilerden hangisidir?",
+      "options": [
+        "A) Çocuk (Child) form",
+        "B) Çok belgeli arayüz (Multiple Document Interface - MDI)",
+        "C) WinForm",
+        "D) Tekli belge arayüzü (Single Document Interface - SDI)",
+        "E) WPF"
+      ],
+      "correct": 1,
+      "explanation": "Birden çok belge/pencere içeren yapı MDI (Multiple Document Interface) olarak adlandırılır."
+    },
+    {
+      "id": 15,
+      "question": "DataGridView kontrolünün veri kaynağını ayarlamak için kullanılan özellik aşağıdakilerden hangisidir?",
+      "options": [
+        "A) DataSet",
+        "B) DataMember",
+        "C) DataTable",
+        "D) DataSource",
+        "E) Table"
+      ],
+      "correct": 3,
+      "explanation": "Veri bağlamak için DataSource özelliği kullanılır."
+    },
+    {
+      "id": 16,
+      "question": "FileFormatException istisnası aşağıdaki durumlarından hangisi oluştuğunda meydana gelir?",
+      "options": [
+        "A) Dosya formatından kaynaklanan bir hata olduğunda.",
+        "B) Dosya boyutu çok büyük olduğunda.",
+        "C) Dosya yolu çok uzun olduğunda.",
+        "D) Belirtilen klasörde dosya bulunamadığında.",
+        "E) Dosya yolunda Türkçe karakter olduğunda."
+      ],
+      "correct": 0,
+      "explanation": "FileFormatException, okunmaya çalışılan dosyanın formatı hatalı veya bozuk olduğunda fırlatılır."
+    },
+    {
+      "id": 17,
+      "question": "Formun boyutu otomatik ölçeklendiğinde tetiklenen form olayı aşağıdakilerden hangisidir?",
+      "options": [
+        "A) Size",
+        "B) AutoSizeChanged",
+        "C) Resize",
+        "D) AutoWindowChanged",
+        "E) EnabledChanged"
+      ],
+      "correct": 1,
+      "explanation": "AutoSize ayarı değiştirildiğinde veya tetiklendiğinde AutoSizeChanged olayı çalışır."
+    },
+    {
+      "id": 18,
+      "question": "string bolum = comboBox1.Items[comboBox1.SelectedIndex].ToString();\nYukarıda verilen kod satırının işlevi aşağıdakilerden hangisidir?",
+      "options": [
+        "A) ComboBox kontrolünde seçili indisin seçimini kaldırır.",
+        "B) ComboBox kontrolünde bir indisi seçili hale getirir.",
+        "C) ComboBox kontrolünde seçili elemanın indisini alır ve değişkene atar.",
+        "D) ComboBox kontrolünde seçili elemanın değerini (metnini) alır ve değişkene atar.",
+        "E) ComboBox kontrolünde satırların değerini geri döndürür."
+      ],
+      "correct": 3,
+      "explanation": "SelectedIndex ile seçilen satırın nesnesi Items listesinden alınır ve metin (string) olarak değişkene atanır."
+    },
+    {
+      "id": 19,
+      "question": "DataGridViewRow r = dataGridView1.Rows[e.RowIndex];\nYukarıdaki kod satırının işlevi aşağıdakilerden hangisidir?",
+      "options": [
+        "A) DataGridView kontrolünde seçili sütunun indisini alır.",
+        "B) DataGridView kontrolünde seçili sütunun değerini alır.",
+        "C) DataGridView kontrolünde satırların değerini geri döndürür.",
+        "D) DataGridView kontrolünde seçili satırın indisini alır.",
+        "E) DataGridView kontrolünde eylemin gerçekleştiği (tıklanan vb.) satır nesnesini alır."
+      ],
+      "correct": 4,
+      "explanation": "e.RowIndex üzerinden aktif olan satır nesnesi DataGridViewRow olarak alınır."
+    },
+    {
+      "id": 20,
+      "question": "Birden fazla seçenek arasından yalnızca bir tanesinin seçilmesini sağlayan form elemanı aşağıdakilerden hangisidir?",
+      "options": [
+        "A) RadioButton",
+        "B) CheckedListBox",
+        "C) CheckBox",
+        "D) RichTextBox",
+        "E) GroupBox"
+      ],
+      "correct": 0,
+      "explanation": "RadioButton kontrolleri aynı grup içerisindeyken sadece bir tanesinin seçilmesine izin verir."
+    }
+  ],
+  "karar-teorisi": [
+    {
+      "id": 1,
+      "question": "\"Ahmet karşısına çıkan iki alternatifle ilgili mutlaka tercihini beyan etmelidir.\"\nBu ifade tercihlerin sağlaması gereken hangi özelliği vurgulamaktadır?",
+      "options": [
+        "A) Asimetri",
+        "B) Tamlık",
+        "C) Geçişkenlik",
+        "D) Yansımalılık",
+        "E) Bağımsızlık"
+      ],
+      "correct": 1,
+      "explanation": "Her zaman tercih beyanında bulunabilme durumu 'Tamlık' (Completeness) özelliğidir."
+    },
+    {
+      "id": 2,
+      "question": "Karar teorisiyle ilgili farklı bilimlerin ya da perspektiflerin açıklama çabası kaotik görünse de, bu yaklaşımlar genel olarak ikiye ayrılmaktadır. Bu iki yaklaşım aşağıdakilerden hangisidir?",
+      "options": [
+        "A) Etkisiz - Betimleyici",
+        "B) Açıklayıcı - Normatif",
+        "C) Normatif - Tanımlayıcı",
+        "D) Normatif - Betimleyici",
+        "E) Betimleyici - Davranışsal"
+      ],
+      "correct": 3,
+      "explanation": "Karar teorisi genel olarak 'Normatif' (nasıl olmalı) ve 'Betimleyici' (Descriptive - nasıl oluyor) olarak ikiye ayrılır."
+    },
+    {
+      "id": 3,
+      "question": "Aşağıdaki kavramlardan hangisi karar alma süreçlerinde bilginin ölçeğine göre tanımlanan bir kategori değildir?",
+      "options": [
+        "A) Belirsizlik",
+        "B) Şüphe",
+        "C) Kesinlik",
+        "D) Risk",
+        "E) Bilgisizlik"
+      ],
+      "correct": 1,
+      "explanation": "Risk, Belirsizlik, Kesinlik ve Bilgisizlik bilginin ölçeğine göre tanımlanır. Şüphe bu kategorilerden biri değildir."
+    },
+    {
+      "id": 4,
+      "question": "A, B ve C şeklinde 3 alternatifi olan Ahmet'in tercihleri arasında A > C ve C > B şeklinde bir ilişki varsa geçişkenlik aksiyomu gereği Ahmet'in nasıl bir karar alması beklenmektedir?",
+      "options": [
+        "A) B > A",
+        "B) B > C",
+        "C) A > B",
+        "D) C > A",
+        "E) C > B"
+      ],
+      "correct": 2,
+      "explanation": "Geçişkenlik (Transitivity) kuralına göre A > C ve C > B ise A > B olmak zorundadır."
+    },
+    {
+      "id": 5,
+      "question": "\"A tercihi her durumda B tercihinden daha iyi sonuçlar veriyorsa, A tercihini B'ye göre ... karar olarak tanımlamak mümkündür.\"\nİfadesindeki boşluğa aşağıdakilerden hangisinin gelmesi uygundur?",
+      "options": [
+        "A) Zayıf baskın",
+        "B) Zayıf dominant",
+        "C) Güçlü dominant",
+        "D) Dominant baskın",
+        "E) Güçlü baskın"
+      ],
+      "correct": 4,
+      "explanation": "Her durumda kesinlikle daha iyi ise 'Güçlü Baskın' (Strictly Dominant) stratejidir."
+    },
+    {
+      "id": 6,
+      "question": "Karar ağaçlarıyla ilgili aşağıdaki ifadelerden hangisi yanlıstır?",
+      "options": [
+        "A) Kollar ve kolların bağlı olduğu daire ya da kutulardan meydana gelmektedir.",
+        "B) Olaylar ya da durumlar zincirine bağlı zamana yayılan karar alma süreçlerini gösterir.",
+        "C) Bir ağacın gövdesine bağlı dallarından esinlenilerek tasarlanmıştır.",
+        "D) Belirli durumlarda kendimize ya da geleceğe dönük nasıl davranacağımızı gösterir.",
+        "E) Karar ağaçlarında ortaya çıkacak sonuç dalların kökünde (başlangıcında) yazmaktadır."
+      ],
+      "correct": 4,
+      "explanation": "Karar ağaçlarında sonuçlar kökte değil, dalların en sonunda (yapraklarda) yazar."
+    },
+    {
+      "id": 7,
+      "question": "Aşağıdaki sembollerden hangisi güçlü ve zayıf tercihi sırasıyla ifade etmektedir?",
+      "options": [
+        "A) ≻, ≽",
+        "B) ≽, ≻",
+        "C) >, ≽",
+        "D) ≽, >",
+        "E) ≻, ≥"
+      ],
+      "correct": 0,
+      "explanation": "Güçlü tercih ≻, zayıf tercih ise ≽ sembolü ile gösterilir."
+    },
+    {
+      "id": 8,
+      "question": "Olasılığın ölçülemediği durumlarda hangi kavramı kullanmak daha doğrudur?",
+      "options": [
+        "A) Şüphe",
+        "B) Fayda",
+        "C) Belirsizlik",
+        "D) Kesinlik",
+        "E) Risk"
+      ],
+      "correct": 2,
+      "explanation": "Risk, olasılıkların bilindiği durumlardır. Olasılıkların bilinemediği durumlara 'Belirsizlik' denir."
+    },
+    {
+      "id": 9,
+      "question": "Seçim Kümesi: {E1, E2}, Alternatif Durumlar Kümesi: {A1, A2, A3}, Sonuç Kümesi: {O1,O2...O6} olan karar tablosu aşağıdakilerden hangisine benzer?",
+      "options": [
+        "A) 6 satırlı ve 3 sütunlu bir şekle",
+        "B) 2 satırlı ve 3 sütunlu bir şekle",
+        "C) 2 satırlı ve 6 sütunlu bir şekle",
+        "D) 3 satırlı ve 2 sütunlu bir şekle",
+        "E) 6 satırlı ve 2 sütunlu bir şekle"
+      ],
+      "correct": 3,
+      "explanation": "Alternatifler satırları (3), Seçim/Durumlar sütunları (2) oluşturur. 3x2=6 sonuç elde edilir."
+    },
+    {
+      "id": 10,
+      "question": "Yarın havanın yağmurlu olma ihtimali %40, Beşiktaş'ın oynayacağı maçı kazanma olasılığı %60 kabul edilmektedir. Bu durumda yarın hem havanın yağmurlu hem de Beşiktaş'ın maçı kazanma ihtimali yüzde kaçtır?",
+      "options": [
+        "A) 24",
+        "B) 50",
+        "C) 30",
+        "D) 35",
+        "E) 33"
+      ],
+      "correct": 0,
+      "explanation": "Bağımsız iki olayın birlikte gerçekleşme olasılığı çarpımlarıdır: 0.40 * 0.60 = 0.24 (%24)."
+    },
+    {
+      "id": 11,
+      "question": "Hangi durumun gerçekleşeceği hakkında kesin bir bilgiye sahipsek, verdiğimiz karar nasıl adlandırılır?",
+      "options": [
+        "A) Belirsizlik altında karar",
+        "B) Şüphe altında karar",
+        "C) Kayıtsızlık altında karar",
+        "D) Kesinlik altında karar",
+        "E) Risk altında karar"
+      ],
+      "correct": 3,
+      "explanation": "Sonucun %100 bilindiği durumlardaki kararlara Kesinlik (Certainty) Altında Karar denir."
+    },
+    {
+      "id": 12,
+      "question": "Aşağıdaki fonksiyonlardan hangisinde marjinal fayda diğerlerine göre daha yüksektir?",
+      "options": [
+        "A) 10x+8",
+        "B) 7x+12",
+        "C) 5x+18",
+        "D) 5x+20",
+        "E) 8x+10"
+      ],
+      "correct": 0,
+      "explanation": "Fonksiyonun eğimi (türevi) marjinal faydayı verir. 10x+8'in eğimi 10'dur ve en yüksektir."
+    },
+    {
+      "id": 13,
+      "question": "Bernoulli'ye göre insanlar karar alma sürecinde neyi maksimize etmektedir?",
+      "options": [
+        "A) Beklenen faydayı",
+        "B) Beklenen getiriyi",
+        "C) Beklenen mutluluğu",
+        "D) Beklenen refahı",
+        "E) Beklenen değeri"
+      ],
+      "correct": 0,
+      "explanation": "Bernoulli'ye göre rasyonel bireyler kararlarında 'Beklenen Faydayı' (Expected Utility) maksimize ederler."
+    },
+    {
+      "id": 14,
+      "question": "P(A) = x ifadesinde 'P' neyi göstermektedir?",
+      "options": [
+        "A) Herhangi bir olayı",
+        "B) İhtimalin sembolünü (Probability)",
+        "C) Bir kişiyi",
+        "D) Belirsizliği",
+        "E) Sonucu"
+      ],
+      "correct": 1,
+      "explanation": "P harfi Probability (Olasılık/İhtimal) kelimesinin baş harfidir."
+    }
+  ],
+  "makine-ogrenmesi": [
+    {
+      "id": 1,
+      "question": "I. Euclidean (Öklid)\nII. Manhattan\nIII. Chebyshev\nIV. Cosine\nV. Gower\n\nYukarıda verilen fonksiyonlardan kaç tanesi k-En Yakın Komşu Algoritmasında uzaklık hesaplamak için kullanılabilir?",
+      "options": [
+        "A) 1",
+        "B) 2",
+        "C) 3",
+        "D) 4",
+        "E) 5"
+      ],
+      "correct": 4,
+      "explanation": "Verilen uzaklık ölçülerinin beşi de k-NN algoritmasında kullanılabilir."
+    },
+    {
+      "id": 2,
+      "question": "Çok katmanlı yapay sinir ağı modelinde girdi (input) ve çıktı (output) katmanları arasında kalan katmanın adı aşağıdakilerden hangisidir?",
+      "options": [
+        "A) Çıktı katmanı",
+        "B) Ortanca katman",
+        "C) Ara (gizli) katman",
+        "D) Girdi katmanı",
+        "E) Kök düğüm katmanı"
+      ],
+      "correct": 2,
+      "explanation": "Girdi ve çıktı arasındaki katmanlara Gizli (Hidden) katman denir."
+    },
+    {
+      "id": 3,
+      "question": "Aşağıdaki seçeneklerden hangisi doğrusal regresyon analizi öncesinde dikkat edilmesi gereken temel varsayımlar arasında yer almaz?",
+      "options": [
+        "A) Sayısal niteliklerin veri setinden çıkartılması",
+        "B) Normal (Gauss) dağılımı kontrolü",
+        "C) Veri setindeki gürültünün kaldırılması",
+        "D) Doğrusallık varsayımı kontrolü",
+        "E) Eş doğrusallığın (colinearity) kaldırılması"
+      ],
+      "correct": 0,
+      "explanation": "Regresyon analizi zaten sayısal nitelikler üzerinden çalışır, bunların çıkarılması regresyonu imkansız kılar."
+    },
+    {
+      "id": 4,
+      "question": "Aşağıdaki bilim insanlarından hangisi yapay zekânın isim babası olarak bilinmektedir?",
+      "options": [
+        "A) John McCarthy",
+        "B) Alan Turing",
+        "C) Hans Moravec",
+        "D) Marvin Minsky",
+        "E) Elon Musk"
+      ],
+      "correct": 0,
+      "explanation": "Yapay zeka terimi ilk kez 1956 Dartmouth Konferansı'nda John McCarthy tarafından kullanılmıştır."
+    },
+    {
+      "id": 5,
+      "question": "Aşağıdakilerden hangisi bir karar ağacı algoritması değildir?",
+      "options": [
+        "A) CART",
+        "B) C5.0",
+        "C) ID8.15",
+        "D) C4.5",
+        "E) ID3"
+      ],
+      "correct": 2,
+      "explanation": "ID3, C4.5, C5.0 ve CART karar ağacı algoritmalarıdır. ID8.15 uydurma bir isimdir."
+    },
+    {
+      "id": 6,
+      "question": "Bir araştırmacı Python'da Naive Bayes modelinin performansını değerlendirmek için tabakalı 10-kat çapraz geçerleme (Stratified 10-Fold CV) yöntemini kullanmak istiyor.\n\nYukarıda verilen işlemin gerçekleştirilebilmesine yönelik aşağıda verilen seçeneklerden hangisi kullanılabilir?",
+      "options": [
+        "A) cv_model = StratifiedKFold(n_splits=1, shuffle=True, random_state=10)",
+        "B) cv_model = StratifiedKFold(n_splits=10, shuffle=True, random_state=10)",
+        "C) cv_model = StratifiedKFold(n_splits=5, shuffle=True, random_state=10)",
+        "D) cv_model = StratifiedKFold(n_splits=2, shuffle=True, random_state=5)",
+        "E) cv_model = KFold(n_splits=10, shuffle=True, random_state=10)"
+      ],
+      "correct": 1,
+      "explanation": "10-kat çapraz geçerleme için n_splits=10 parametresi kullanılmalıdır."
+    },
+    {
+      "id": 7,
+      "question": "Bir restoran, müşterilerin ödediği toplam hesap tutarını (tutar) kullanarak müşterinin vereceği bahşişi (bahsis) tahmin etmek için basit doğrusal regresyon analizi gerçekleştiriyor. Analiz sonucunda model sabiti (β0 = 5) ve tutar değişkeni katsayısı (β1 = 0.20) olarak bulunmuştur.\n\nDoğrusal regresyon modeline göre; toplam 150TL'lik hesap ödeyen bir müşterinin bahşiş bırakacağı miktar aşağıdakilerden hangisidir?",
+      "options": [
+        "A) 50",
+        "B) 105",
+        "C) 90",
+        "D) 35",
+        "E) 75"
+      ],
+      "correct": 3,
+      "explanation": "y = β0 + β1 * x => Bahşiş = 5 + 0.20 * 150 = 5 + 30 = 35."
+    },
+    {
+      "id": 8,
+      "question": "Derin öğrenme kavramındaki derinlik aşağıdakilerden hangisini ifade eder?",
+      "options": [
+        "A) Eğitim veri setindeki örnek sayısı.",
+        "B) Kullanılan yapay sinir ağı modeli sayısı.",
+        "C) Test veri setindeki örnek sayısı.",
+        "D) Modeldeki gizli katman sayısı.",
+        "E) Veri setindeki nitelik sayısı."
+      ],
+      "correct": 3,
+      "explanation": "Derin öğrenmedeki 'derinlik', yapay sinir ağındaki gizli katmanların (hidden layers) sayısını ifade eder."
+    },
+    {
+      "id": 9,
+      "question": "Naive Bayes algoritması ile ilgili verilenlerden hangisi yanlıştır?",
+      "options": [
+        "A) Algoritmanın en önemli özelliklerinden biri 'bağımsızlık varsayımı'dır.",
+        "B) Analizler sonunda, sınıfı bilinmeyen bir örneğe, olasılığı en düşük çıkan sınıf atanır.",
+        "C) Bir danışmanlı öğrenme algoritmasıdır.",
+        "D) Bayes Teoremi'ne dayanır.",
+        "E) Veri setinde sürekli nitelik olması durumunda, sürekli dağılım formülleri kullanılır."
+      ],
+      "correct": 1,
+      "explanation": "Naive Bayes algoritması, olasılığı en düşük çıkan değil, en yüksek (maksimum) olasılığa sahip sınıfı atar."
+    },
+    {
+      "id": 10,
+      "question": "Aşağıdaki görevlerin hangisini k-Ortalamalar Algoritmasını kullanarak gerçekleştirmek daha uygundur?",
+      "options": [
+        "A) Bir e-ticaret şirketinin, müşterilerini alışveriş alışkanlıklarına göre kümelemesi.",
+        "B) Bir finans şirketinin belirli bir hisse senedi değerini tahmin etmesi.",
+        "C) Bir abonelik sağlayıcısının, müşteri kaybını öngörmesi.",
+        "D) Bir doktorun, semptomlara göre hastalığı sınıflandırması.",
+        "E) Hava durumunun yarın yağmurlu olup olmayacağını tahmin etmesi."
+      ],
+      "correct": 0,
+      "explanation": "k-Ortalamalar (k-Means) bir kümeleme algoritmasıdır ve müşterileri özelliklerine göre gruplamak için uygundur."
+    },
+    {
+      "id": 11,
+      "question": "Bir nöronun girdileri (x1 = 100, x2 = 40) ve ağırlıkları (w1 = 0.1, w2 = 0.5) olarak verilmiştir. Bu nöronun net girdisi ağırlıklı toplam (weighted sum) fonksiyonu kullanılarak hesaplanırsa nöronun net girdisi aşağıdaki seçeneklerden hangisi olur?",
+      "options": [
+        "A) 40",
+        "B) 30",
+        "C) 10",
+        "D) 50",
+        "E) 20"
+      ],
+      "correct": 1,
+      "explanation": "Net Girdi = (x1 * w1) + (x2 * w2) = (100 * 0.1) + (40 * 0.5) = 10 + 20 = 30."
+    },
+    {
+      "id": 12,
+      "question": "'Bana arkadaşını söyle, sana kim olduğunu söyleyeyim' atasözü ile özdeşleşen makine öğrenmesi algoritması aşağıdakilerden hangisidir?",
+      "options": [
+        "A) k-Ortalamalar Algoritması",
+        "B) Karar Ağaçları",
+        "C) Doğrusal Regresyon Analizi",
+        "D) k-En Yakın Komşu Algoritması",
+        "E) Yapay Sinir Ağları"
+      ],
+      "correct": 3,
+      "explanation": "k-En Yakın Komşu (k-NN) algoritması, bir verinin sınıfını en yakın k komşusuna bakarak belirler."
+    },
+    {
+      "id": 13,
+      "question": "Çoklu doğrusal regresyon analizinde niteliklerin (beta) katsayılarına bakılarak model için anlamlı olup olmadıklarına aşağıdakilerden hangisi kullanılarak karar verilir?",
+      "options": [
+        "A) p-değeri 0.05'den küçükse, nitelik model için anlamlıdır.",
+        "B) p-değeri 0.1'den küçükse, nitelik model için anlamlıdır.",
+        "C) R2 değeri 1'den büyükse, nitelik model için anlamlıdır.",
+        "D) p-değeri 0.05'den büyükse, nitelik model için anlamlıdır.",
+        "E) R2 değeri 1'e yakınsa, nitelik model için anlamlıdır."
+      ],
+      "correct": 0,
+      "explanation": "İstatistiksel modellemede bir katsayının anlamlılığı genelde p < 0.05 hipotez testi ile ölçülür."
+    },
+    {
+      "id": 14,
+      "question": "k-En Yakın Komşu Algoritması ile ilgili verilen seçeneklerden hangisi yanlıştır?",
+      "options": [
+        "A) Bir danışmanlı öğrenme algoritmasıdır.",
+        "B) Algoritmadaki k, veri setine göre ayarlanması gereken bir hiperparametredir.",
+        "C) Yalnızca sınıflandırma problemlerinin çözümünde kullanılabilir.",
+        "D) Sınıfı bilinmeyen örneğin sınıfına karar verilirken, çoğunluk oylaması kullanılabilir.",
+        "E) Uzaklık (mesafe) ölçümleri kullanılarak çalışır."
+      ],
+      "correct": 2,
+      "explanation": "k-NN algoritması yalnızca sınıflandırma değil, regresyon problemlerinin (k-NN Regression) çözümünde de kullanılabilir."
+    },
+    {
+      "id": 15,
+      "question": "Aşağıdaki seçeneklerden hangisi makine öğrenmesinin temel unsurları arasında yer almaz?",
+      "options": [
+        "A) Algoritma",
+        "B) Görev",
+        "C) Deneyim (veri)",
+        "D) Performans",
+        "E) Analizde kullanılan programlama dili"
+      ],
+      "correct": 4,
+      "explanation": "Makine öğrenmesinin unsurları Görev (Task), Deneyim (Experience) ve Performans (Performance)'dır. Programlama dili bir unsur değildir."
+    },
+    {
+      "id": 16,
+      "question": "Karar ağaçları ile sınıflandırmadaki amaç; ... bulmak için etiketlenmemiş bir gözlemin niteliklerini test ederek ağaç boyunca bir ... bulmaktır.\nYukarıdaki tanımda verilen boşluklara sırasıyla aşağıdaki şıklarda verilen hangi ikili gelmelidir?",
+      "options": [
+        "A) sınıf etiketini - dal",
+        "B) üst düğümünü - yaprak",
+        "C) üst düğümünü - kök düğüm",
+        "D) dal - yaprak",
+        "E) sınıf etiketini - yol"
+      ],
+      "correct": 4,
+      "explanation": "Amaç: Sınıf etiketini bulmak için, kökten yaprağa doğru bir yol bulmaktır."
+    },
+    {
+      "id": 17,
+      "question": "Bir veri setinde diğer gözlemlerden önemli ölçüde uzak olan gözlemlere verilen ad aşağıdakilerden hangisidir?",
+      "options": [
+        "A) Aykırı değer",
+        "B) Eksik değerler",
+        "C) Tam değerler",
+        "D) Hatalı değerler",
+        "E) Tekrar eden değerler"
+      ],
+      "correct": 0,
+      "explanation": "Diğer gözlemlerden ciddi şekilde sapan ve uzak olan verilere 'Aykırı Değer' (Outlier) denir."
+    },
+    {
+      "id": 18,
+      "question": "Aşağıdaki seçeneklerde verilen Python kütüphanelerinden hangileri veri görselleştirme üzerine özelleşmiştir?",
+      "options": [
+        "A) TensorFlow, Keras",
+        "B) NumPy, Pandas",
+        "C) Scikit-learn, TensorFlow",
+        "D) Matplotlib, Seaborn",
+        "E) Pandas, Scikit-learn"
+      ],
+      "correct": 3,
+      "explanation": "Python'da Matplotlib ve Seaborn veri görselleştirmesi için özelleşmiş başlıca kütüphanelerdir."
+    },
+    {
+      "id": 19,
+      "question": "Aşağıdaki seçeneklerden hangisinde sıralı kategorik veriye örnek verilmiştir?",
+      "options": [
+        "A) Küçük, orta, büyük",
+        "B) Kırmızı, beyaz, yeşil",
+        "C) Var, yok",
+        "D) Veteriner, doktor, hakim",
+        "E) Sağlıklı, hasta"
+      ],
+      "correct": 0,
+      "explanation": "Sıralı (Ordinal) kategorik veriler, kendi içinde büyüklük veya derecelendirme anlamı taşıyan verilerdir (Küçük < Orta < Büyük)."
+    },
+    {
+      "id": 20,
+      "question": "Makine öğrenmesi stratejileri ile ilgili aşağıdakilerden hangisi yanlıştır?",
+      "options": [
+        "A) Ajan, çevre, eylem gibi kavramlar pekiştirmeli öğrenme ile ilişkilidir.",
+        "B) Pekiştirmeli öğrenme, ödül-ceza prensibine dayalıdır.",
+        "C) Danışmanlı öğrenmede veri setinde bir hedef niteliğin (etiketin) bulunmasına ihtiyaç duyulmaz.",
+        "D) Sınıflandırma problemleri, danışmanlı öğrenmeden faydalanılarak çözülebilir.",
+        "E) Bir şirket danışmansız öğrenme algoritmalarından faydalanarak müşterilerini kümelere ayırabilir."
+      ],
+      "correct": 2,
+      "explanation": "Danışmanlı (Supervised) öğrenmede, eğitim verisinde mutlaka tahmin edilecek bir etiket / hedef (target) bulunmalıdır."
+    },
+    {
+      "id": 21,
+      "question": "Aşağıda verilen görev türlerinden hangisi danışmansız öğrenme (unsupervised learning) kapsamına girmez?",
+      "options": [
+        "A) Anormallik tespiti",
+        "B) Birliktelik kuralları",
+        "C) Kümeleme",
+        "D) Sınıflandırma",
+        "E) Boyut azaltma"
+      ],
+      "correct": 3,
+      "explanation": "Sınıflandırma (Classification), danışmanlı (Supervised) öğrenme kapsamına giren bir görevdir."
+    }
+  ],
+  "mobil-programlama": [
+    {
+      "id": 1,
+      "question": "Kullanıcı etkileşimi olmayacak, kendi arayüz bileşenimizi tasarlamak istiyorsak hangi sınıftan miras almamız uygun çözümdür?",
+      "options": [
+        "A) Widget",
+        "B) Scaffold",
+        "C) Stateless Widget",
+        "D) MaterialApp",
+        "E) Container"
+      ],
+      "correct": 2,
+      "explanation": "Durum tutmayan (state barındırmayan) ve kullanıcı etkileşimine göre yeniden çizilmeyen bileşenler StatelessWidget sınıfından miras alınarak oluşturulur."
+    },
+    {
+      "id": 2,
+      "question": "Flutter projeye dahil edilmiş resim dosyalarını temaya göre farklı klasörlerden seçebileceği gibi aşağıdaki gibi bir konfigürasyona göre de farklı klasörlerden uygun resmi seçebilir:\n\n'1.0x/my_icon.png, 2.0x/my_icon.png, 3.0x/my_icon.png'\n\nYukarıda boş bırakılan yere aşağıdaki seçeneklerden hangisi getirilmelidir?",
+      "options": [
+        "A) Cihazdaki ekran tipine",
+        "B) Cihazdaki sensör sayısına",
+        "C) Cihazdaki kamera çözünürlüğüne",
+        "D) Cihazdaki piksel yoğunluğuna (pixel density)",
+        "E) Cihazdaki ekran parlaklığına"
+      ],
+      "correct": 3,
+      "explanation": "1.0x, 2.0x, 3.0x isimlendirmeleri ekranların Piksel Yoğunluğuna (DPI / Pixel Density) göre uygun resmin getirilmesini sağlar."
+    },
+    {
+      "id": 3,
+      "question": "Navigator API'de Navigator.pushNamed() fonksiyonunun hangi parametresi ile açılan sayfaya veri gönderimi yapılabilmektedir?",
+      "options": [
+        "A) parameters",
+        "B) key",
+        "C) title",
+        "D) home",
+        "E) arguments"
+      ],
+      "correct": 4,
+      "explanation": "Sayfalar arası veri (data/obje) taşımak için arguments parametresi kullanılır."
+    },
+    {
+      "id": 4,
+      "question": "Aşağıdakilerden hangisi bir satırda sağdan sola birden fazla görsel arayüz bileşenini yerleştirmek için kullanılan düzenleyici arayüz bileşenidir?",
+      "options": [
+        "A) Column",
+        "B) Stack",
+        "C) Row",
+        "D) Wrap",
+        "E) GridView"
+      ],
+      "correct": 2,
+      "explanation": "Yatay eksende (soldan sağa / sağdan sola) bileşen dizmek için Row kullanılır."
+    },
+    {
+      "id": 5,
+      "question": "Container(width: 100, height: 100, color: Colors.red)\nYukarıdaki kod satırında bir Container'ın genişlik ve yüksekliğinin 100 birim olması belirtilmiştir. Lakin bu Container sayfanın üst bileşeni ise ekranın tamamını kapladığı görülür. Bunun sebebi nedir?",
+      "options": [
+        "A) Container'ın üst seviyesindeki kısıtın (constraint) kendisini buna zorlaması",
+        "B) Container içerisinde başka bir widget olmaması (child parametresinin verilmemiş olması)",
+        "C) Container'ın decoration parametresinin tanımlanmamış olması",
+        "D) Container'ın color parametresinin tanımlanmış olması",
+        "E) Container'ın padding parametresinin tanımlanmamış olması"
+      ],
+      "correct": 0,
+      "explanation": "Flutter'da 'Constraints go down, sizes go up'. Kök bileşenler her zaman tüm ekranı kaplamaya zorlanır."
+    },
+    {
+      "id": 6,
+      "question": "Dart programlama dili özellikleri için aşağıdaki ifadelerden hangisi yanlıştır?",
+      "options": [
+        "A) Dart'ta with anahtar kelimesi ile birden fazla mixin'den miras alınır.",
+        "B) Dart'ta implements anahtar kelimesi ile birden fazla sınıftan arayüz (interface) gibi miras alınır.",
+        "C) Dart'ta tüm sınıflar Null sınıfından miras alınarak türetilir.",
+        "D) Dart'ta extends anahtar kelimesi ile tek bir sınıftan miras alınır.",
+        "E) Dart'ta abstract anahtar kelimesi ile tanımlanan sınıfların örnekleri (instance) oluşturulamaz."
+      ],
+      "correct": 2,
+      "explanation": "Dart'ta tüm sınıflar Object sınıfından miras alır, Null sınıfından değil."
+    },
+    {
+      "id": 7,
+      "question": "Aşağıdakilerden hangisi bellekte verileri anahtar - değer (key-value) çiftleri şeklinde saklamak için kullanılan veri türünün adıdır?",
+      "options": [
+        "A) Array",
+        "B) List",
+        "C) Map",
+        "D) Cache",
+        "E) Container"
+      ],
+      "correct": 2,
+      "explanation": "Anahtar-değer (Key-Value) tabanlı veri yapısı Dart dilinde Map olarak adlandırılır."
+    },
+    {
+      "id": 8,
+      "question": "flutter create name1\nYukarıdaki komut çalıştırıldığında aşağıdakilerden hangisini gerçekleştirir?",
+      "options": [
+        "A) name1 adında bir değişken oluşturur.",
+        "B) name1 adında bir proje klasörü oluşturur.",
+        "C) name1 adında bir dart dosyası oluşturur.",
+        "D) name1 adında bir sınıf oluşturur.",
+        "E) name1 adında bir kütüphane oluşturur."
+      ],
+      "correct": 1,
+      "explanation": "flutter create komutu yeni bir Flutter projesi/klasörü oluşturur."
+    },
+    {
+      "id": 9,
+      "question": "Windows işletim sisteminde masaüstü Flutter uygulama geliştirme desteği sağlamak için aşağıdakilerden hangisinin kurulması gerekir?",
+      "options": [
+        "A) Firefox Internet Tarayıcısı",
+        "B) Android Studio Geliştirme Ortamı",
+        "C) Visual Studio Code Geliştirme Ortamı",
+        "D) Visual Studio Geliştirme Ortamı (C++ Desktop Development yüklü şekilde)",
+        "E) IntelliJ IDEA Geliştirme Ortamı"
+      ],
+      "correct": 3,
+      "explanation": "Windows üzerinde masaüstü Flutter uygulaması derlemek için Microsoft'un Visual Studio (Desktop Development with C++) paketine ihtiyaç vardır."
+    },
+    {
+      "id": 10,
+      "question": "Dart'ta bir sınıf tanımlaması yapılırken mixin kullanarak miras alma yapılacaksa mixin adları hangi anahtar kelimeden sonra sıralanırlar?",
+      "options": [
+        "A) extends",
+        "B) implements",
+        "C) with",
+        "D) parent",
+        "E) include"
+      ],
+      "correct": 2,
+      "explanation": "Dart dilinde Mixin'leri projeye dahil etmek için with anahtar kelimesi kullanılır."
+    },
+    {
+      "id": 11,
+      "question": "Aşağıdakilerden hangisi Material düzenleyici (layout) arayüz bileşenlerinden biridir?",
+      "options": [
+        "A) Asset",
+        "B) FlatButton",
+        "C) ListTile",
+        "D) Icon",
+        "E) Text"
+      ],
+      "correct": 2,
+      "explanation": "ListTile, bir liste öğesini Material dizayn prensiplerine göre yapılandıran standart düzenleyici bileşendir."
+    },
+    {
+      "id": 12,
+      "question": "Aşağıdakilerden hangisi Flutter'ın desteklemediği bir işletim sistemi ortamıdır?",
+      "options": [
+        "A) Linux",
+        "B) HarmonyOS",
+        "C) Windows",
+        "D) iOS",
+        "E) Android"
+      ],
+      "correct": 1,
+      "explanation": "HarmonyOS (Huawei), standart Flutter SDK'sı tarafından resmi olarak native seviyede desteklenmeyen platformdur."
+    },
+    {
+      "id": 13,
+      "question": "Detaylı bir navigasyon işlemi için tanımlanabilecek onGenerateRoute parametresi aşağıdaki bileşenlerden hangisinde vardır?",
+      "options": [
+        "A) Container",
+        "B) GestureDetector",
+        "C) Scaffold",
+        "D) MaterialApp",
+        "E) CupertinoApp"
+      ],
+      "correct": 3,
+      "explanation": "Navigasyon tabloları ve onGenerateRoute ayarı uygulamanın kökündeki MaterialApp veya CupertinoApp içerisine tanımlanır."
+    },
+    {
+      "id": 14,
+      "question": "dart:convert kütüphanesinde Json metnini bir objeye çevirmek için kullanılan fonksiyon aşağıdakilerden hangisidir?",
+      "options": [
+        "A) toJson()",
+        "B) jsonEncode()",
+        "C) serialize()",
+        "D) jsonDecode()",
+        "E) fromJson()"
+      ],
+      "correct": 3,
+      "explanation": "String formatındaki JSON verisini Dart objelerine çevirmek (parse) için jsonDecode() kullanılır."
+    },
+    {
+      "id": 15,
+      "question": "Aşağıdaki komutlardan hangisi bir Flutter uygulamasının Android dağıtımı (APK) oluşturmasını sağlar?",
+      "options": [
+        "A) flutter make apk",
+        "B) flutter appbundle apk",
+        "C) flutter build apk",
+        "D) flutter profile appbundle",
+        "E) flutter create apk"
+      ],
+      "correct": 2,
+      "explanation": "Flutter uygulamasını derleyip .apk çıktısı almak için 'flutter build apk' komutu kullanılır."
+    },
+    {
+      "id": 16,
+      "question": "Aşağıdakilerden hangisi GestureDetector widgetı aracılığı ile kullanıcının çift tıklama işlevini yakalamayı sağlayan parametredir?",
+      "options": [
+        "A) onLongPress",
+        "B) onTap",
+        "C) onTapDown",
+        "D) onDoubleTap",
+        "E) onTapCancel"
+      ],
+      "correct": 3,
+      "explanation": "Çift tıklamayı yakalamak için onDoubleTap olayı tetiklenir."
+    },
+    {
+      "id": 17,
+      "question": "Navigator API'de ModalRoute.of(context).settings.arguments metodu ile neye erişilir?",
+      "options": [
+        "A) Açılır ekran boyutuna",
+        "B) Sayfanın theme (şablon) özelliklerine",
+        "C) Sayfaya gönderilen argümanlara (verilere)",
+        "D) Gezinti yapılan uygulamalar listesine",
+        "E) Cihaz konfigürasyon bilgilerine"
+      ],
+      "correct": 2,
+      "explanation": "ModalRoute üzerinden önceki sayfadan pushNamed ile yollanan argümanlara (verilere) erişilir."
+    },
+    {
+      "id": 18,
+      "question": "Aşağıdakilerden hangisi Flutter'da uygulama seviyesi durum yönetimi (State Management) için kullanılan popüler kütüphanenin adıdır?",
+      "options": [
+        "A) intl",
+        "B) material",
+        "C) http",
+        "D) firebase",
+        "E) provider"
+      ],
+      "correct": 4,
+      "explanation": "Provider, Flutter'da Google tarafından da önerilen durum (state) yönetimi paketidir."
+    },
+    {
+      "id": 19,
+      "question": "Json Serializable paketi ile otomatik json dönüştürmesi yapılacak bir veri modeli sınıfı içerisinde @JsonKey() annotation'ı (dipnotu) aşağıdaki amaçlardan hangisi için kullanılır?",
+      "options": [
+        "A) Sayfanın yazı tipi kodlamasından kaynaklı çevirme ihtiyacının belirtilmesi",
+        "B) Bir değişkene JSON çevriminde o alanın JSON karşılık isminin (veya ek işlevlerinin) belirtilmesi",
+        "C) Veritabanındaki birincil anahtar (Primary Key) olduğunu göstermek",
+        "D) Değişkenin geçici (transient) olduğunu belirtmek",
+        "E) Verinin JSON serileştirmeden muaf tutulması için"
+      ],
+      "correct": 1,
+      "explanation": "@JsonKey, bir sınıf elemanının JSON formatında hangi isimle (key) okunup yazılacağını eşleştirmek için kullanılır."
+    },
+    {
+      "id": 20,
+      "question": "Flutter kod içerisinde projeye dahil edilmiş varlıklara (assets) erişmek için ne kullanır?",
+      "options": [
+        "A) AssetMap",
+        "B) AssetString",
+        "C) AssetStream",
+        "D) AssetFolder",
+        "E) AssetBundle"
+      ],
+      "correct": 4,
+      "explanation": "Flutter projeye dahil edilmiş resim veya metin dosyalarını yüklemek için AssetBundle yapısını kullanır."
+    },
+    {
+      "id": 21,
+      "question": "pubspec.yaml dosyasındaki gereksinimler (dependencies) kısmında paket yönetiminin en güncel (fakat kırılmalara yol açmayan) majör sürümü bulması için versiyon numarası önüne aşağıdaki sembollerden hangisi gelmektedir?",
+      "options": [
+        "A) ?",
+        "B) ^",
+        "C) *",
+        "D) %",
+        "E) +"
+      ],
+      "correct": 1,
+      "explanation": "Karet (^) işareti (örn: ^1.2.0), paketin sadece uyumlu sürümlerinde (1.x.x) güncellenmesini sağlar."
+    },
+    {
+      "id": 22,
+      "question": "Flutter'da her uygulama için varsayılan bir SharedPreferences dosyası oluşturulmaktadır. Bu dosyanın bir referansını elde etmek için aşağıdaki kodlamalardan hangisi kullanılır?",
+      "options": [
+        "A) final prefs = await SharedPreferences.getInstance();",
+        "B) final prefs = File.SharedPreferences();",
+        "C) final prefs = new SharedPreferences();",
+        "D) final prefs = SharedPreferences.defaultInstance();",
+        "E) final prefs = await SharedPreferences.getValue();"
+      ],
+      "correct": 0,
+      "explanation": "SharedPreferences nesnesinin instance'ını asenkron olarak elde etmek için getInstance() metodu kullanılır."
+    },
+    {
+      "id": 23,
+      "question": "flutter_test paketi içerisindeki Finder sınıfı ile arayüzde bir metnin varlığını test edebilmek için aşağıdaki fonksiyon çağrılarından hangisi kullanılır?",
+      "options": [
+        "A) text.find()",
+        "B) finder.string()",
+        "C) string.find()",
+        "D) widget.find()",
+        "E) find.text()"
+      ],
+      "correct": 4,
+      "explanation": "Flutter test kütüphanesinde bir yazıyı bulmak için find.text('Aranan Yazı') fonksiyonu kullanılır."
+    },
+    {
+      "id": 24,
+      "question": "Flutter'da paket bağımlılıkları belirtmek için pubspec.yaml dosyasında kullanılan başlık aşağıdakilerden hangisidir?",
+      "options": [
+        "A) resources:",
+        "B) packages:",
+        "C) requirements:",
+        "D) dependencies:",
+        "E) relations:"
+      ],
+      "correct": 3,
+      "explanation": "Paketlerin eklendiği ana başlık 'dependencies:' dir."
+    },
+    {
+      "id": 25,
+      "question": "Flutter'da tüm arayüz bileşenlerinin miras alarak oluşturuldukları kök sınıfın adı aşağıdakilerden hangisidir?",
+      "options": [
+        "A) Component",
+        "B) Widget",
+        "C) Form",
+        "D) Frame",
+        "E) Field"
+      ],
+      "correct": 1,
+      "explanation": "Flutter'da her arayüz elemanı temelinde bir Widget'tır."
+    },
+    {
+      "id": 26,
+      "question": "Flutter'daki provider kütüphanesi ile sağlanan uygulama seviyesi durum yönetiminde aşağıdaki hangi widget ile sayfadaki belli bir alanın güncellenmesi (sadece o alanın yeniden çizilmesi) sağlanır?",
+      "options": [
+        "A) MultiProvider",
+        "B) Provider",
+        "C) Listener",
+        "D) Consumer",
+        "E) ChangeNotifier"
+      ],
+      "correct": 3,
+      "explanation": "Consumer bileşeni, sadece sarmaladığı kısmı veri değiştiğinde yeniden çizmek (build) için kullanılır."
+    },
+    {
+      "id": 27,
+      "question": "Aşağıdaki operatörlerden hangisi bir listedeki içeriği bir başka listeye yaymak/kopyalamak (spread) için kullanılır?",
+      "options": [
+        "A) ...? (üç nokta soru işareti)",
+        "B) => (eşittir büyüktür)",
+        "C) : (iki nokta üst üste)",
+        "D) ... (üç nokta)",
+        "E) ??= (iki soru işareti eşittir)"
+      ],
+      "correct": 3,
+      "explanation": "Dart dilinde spread (yayma) operatörü üç noktadır (...). Eğer liste null olabiliyorsa null-aware spread (...) kullanılır."
+    },
+    {
+      "id": 28,
+      "question": "flutter_test paketi kullanarak bir widget testi yapılacaktır. Widget'ın test ortamında sanal olarak oluşturulması için aşağıdaki hangi sınıf ve fonksiyon çifti kullanılır?",
+      "options": [
+        "A) Tester - pump",
+        "B) TestWidget - tester",
+        "C) WidgetTester - pumpWidget",
+        "D) Finder - findWidget",
+        "E) Matcher - findOneWidget"
+      ],
+      "correct": 2,
+      "explanation": "WidgetTester sınıfının pumpWidget() metodu test edilecek widget'ı hafızaya yükler."
+    },
+    {
+      "id": 29,
+      "question": "Dart'ta bir fonksiyonun asenkron olarak çalışması için aşağıdakilerden hangisinin yapılması gerekir?",
+      "options": [
+        "A) Fonksiyonun adından sonra async anahtar kelimesinin kullanılması",
+        "B) Fonksiyonun bir sınıf içerisinde tanımlanmış olması",
+        "C) Fonksiyonun static olarak tanımlanması",
+        "D) Fonksiyonun global olarak tanımlanması",
+        "E) Fonksiyonun içerisinde await anahtar kelimesinin kullanılması"
+      ],
+      "correct": 0,
+      "explanation": "Bir fonksiyonu asenkron hale getirmek için imzasının sonuna (gövdesinin başına) async kelimesi eklenir."
+    }
+  ]
+}
