@@ -167,7 +167,7 @@ body {
 }
 
 /* ── Scrollbar ── */
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb {
   background: var(--text-muted);
@@ -183,3 +183,15 @@ body {
 
 /* ── Utility ── */
 .text-center { text-align: center; }
+
+/* ── Global Mobile Touch & Responsive Polish ── */
+@media (max-width: 768px) {
+  button, input, select, a {
+    min-height: 44px;
+  }
+
+  .glass-panel {
+    border-radius: var(--radius-md);
+  }
+}
+
