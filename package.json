@@ -1,11 +1,13 @@
 {
-  "name": "quiz-app-root",
+  "name": "gaia-quiz-platform",
   "version": "1.0.0",
-  "description": "Root wrapper for the quiz app to forward commands",
+  "description": "GAIA - İnteraktif Sınav Hazırlık ve Analiz Platformu",
+  "private": true,
   "scripts": {
-    "dev": "cd quiz-app && npm run dev",
-    "start": "cd quiz-app && npm run dev",
-    "install": "cd quiz-app && npm install",
-    "build": "cd quiz-app && npm run build"
+    "dev": "npm --prefix quiz-app run dev",
+    "start": "npm --prefix quiz-app run dev",
+    "build": "npm --prefix quiz-app run build",
+    "preview": "npm --prefix quiz-app run preview",
+    "lint": "npm --prefix quiz-app run lint"
   }
 }
