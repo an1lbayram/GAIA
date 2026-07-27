@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Quiz from './pages/Quiz';
@@ -11,8 +11,9 @@ import { ArrowUp } from 'lucide-react';
 import './App.css'; 
 
 function App() {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
   const [isPomoOpen, setIsPomoOpen] = useState(false);
+  const [showScroll, setShowScroll] = useState(false);
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -23,13 +24,11 @@ function App() {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  const [showScroll, setShowScroll] = useState(false);
-  
   useEffect(() => {
     const checkScroll = () => {
       setShowScroll(window.scrollY > 300);
     };
-    window.addEventListener('scroll', checkScroll);
+    window.addEventListener('scroll', checkScroll, { passive: true });
     return () => window.removeEventListener('scroll', checkScroll);
   }, []);
 
@@ -57,8 +56,13 @@ function App() {
         <Pomodoro isOpen={isPomoOpen} setIsOpen={setIsPomoOpen} />
         
         {showScroll && (
-          <button className="scroll-up-btn animate-fade-in" onClick={scrollToTop} aria-label="Yukarı Çık">
-            <ArrowUp size={24} />
+          <button 
+            className="scroll-up-btn animate-fade-in" 
+            onClick={scrollToTop} 
+            aria-label="Yukarı Çık"
+            title="Yukarı Çık"
+          >
+            <ArrowUp size={22} />
           </button>
         )}
       </div>

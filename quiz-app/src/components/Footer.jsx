@@ -1,4 +1,3 @@
-import React from 'react';
 import { ExternalLink, Sparkles } from 'lucide-react';
 import './Footer.css';
 
@@ -9,17 +8,30 @@ const Footer = () => {
         <div className="footer-left">
           <Sparkles size={16} className="footer-sparkle" />
           <span className="footer-brand">GAIA</span>
+          <span className="footer-version">v1.0</span>
         </div>
         
         <div className="footer-center">
           <span>Created by</span>
-          <a href="https://an1lbayram-github-io.vercel.app/" target="_blank" rel="noopener noreferrer" className="footer-author">
+          <a 
+            href="https://an1lbayram-github-io.vercel.app/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="footer-author"
+          >
             an1lbayram
           </a>
         </div>
         
         <div className="footer-right">
-          <a href="https://an1lbayram-github-io.vercel.app/" target="_blank" rel="noopener noreferrer" className="footer-social" aria-label="Website">
+          <a 
+            href="https://an1lbayram-github-io.vercel.app/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="footer-social" 
+            aria-label="Geliştirici Web Sitesi"
+            title="Geliştirici Web Sitesi"
+          >
             <ExternalLink size={16} />
           </a>
         </div>

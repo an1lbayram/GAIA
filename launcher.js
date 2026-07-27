@@ -3,7 +3,7 @@ const { spawn, execSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
-const PORT = 3050;
+const PORT = process.env.PORT || 3050;
 let viteProcess = null;
 
 const html = `
@@ -12,7 +12,7 @@ const html = `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎓 GAIA</title>
+    <title>🎓 GAIA Launcher</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
         
@@ -24,7 +24,7 @@ const html = `
 
         body { 
             font-family: 'Outfit', sans-serif; 
-            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%); 
+            background: linear-gradient(135deg, #0c0f1a 0%, #141829 50%, #1a1f35 100%); 
             color: #ffffff; 
             display: flex; 
             align-items: center; 
@@ -34,14 +34,14 @@ const html = `
         }
 
         .glass-panel { 
-            background: rgba(255, 255, 255, 0.05); 
-            backdrop-filter: blur(16px); 
-            -webkit-backdrop-filter: blur(16px); 
+            background: rgba(255, 255, 255, 0.04); 
+            backdrop-filter: blur(20px); 
+            -webkit-backdrop-filter: blur(20px); 
             border-radius: 24px; 
             padding: 50px; 
             text-align: center; 
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); 
-            border: 1px solid rgba(255, 255, 255, 0.1); 
+            box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.4); 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
             max-width: 600px; 
             width: 90%; 
             animation: fadeIn 0.8s ease-out forwards;
@@ -53,56 +53,56 @@ const html = `
         }
 
         h1 { 
-            margin-bottom: 20px; 
-            font-size: 3rem; 
+            margin-bottom: 16px; 
+            font-size: 3.2rem; 
             font-weight: 800;
             color: #ffffff;
+            letter-spacing: -0.02em;
         }
 
         .accent-text {
-            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #8b7cf7 0%, #c4b5fd 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
         }
 
         p.subtitle { 
-            font-size: 1.2rem; 
+            font-size: 1.15rem; 
             line-height: 1.6; 
-            margin-bottom: 40px; 
-            color: rgba(255, 255, 255, 0.85); 
+            margin-bottom: 32px; 
+            color: rgba(255, 255, 255, 0.8); 
             font-weight: 300;
         }
 
         .features {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-bottom: 40px;
+            gap: 12px;
+            margin-bottom: 36px;
             flex-wrap: wrap;
         }
 
         .feature-badge {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 8px 16px;
+            background: rgba(139, 124, 247, 0.15);
+            padding: 8px 18px;
             border-radius: 50px;
-            font-size: 0.9rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #4facfe;
+            font-size: 0.88rem;
+            border: 1px solid rgba(139, 124, 247, 0.3);
+            color: #c4b5fd;
             font-weight: 600;
         }
 
         .btn { 
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #6c5ce7 0%, #a78bfa 100%);
             color: white; 
             border: none; 
             padding: 16px 48px; 
-            font-size: 1.2rem; 
+            font-size: 1.15rem; 
             font-family: 'Outfit', sans-serif;
             border-radius: 50px; 
             cursor: pointer; 
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
-            box-shadow: 0 10px 20px rgba(0, 242, 254, 0.3); 
+            box-shadow: 0 10px 25px rgba(108, 92, 231, 0.4); 
             font-weight: 600; 
             display: inline-flex;
             align-items: center;
@@ -110,8 +110,8 @@ const html = `
         }
 
         .btn:hover { 
-            transform: translateY(-3px) scale(1.05); 
-            box-shadow: 0 15px 30px rgba(0, 242, 254, 0.4); 
+            transform: translateY(-3px) scale(1.03); 
+            box-shadow: 0 15px 35px rgba(108, 92, 231, 0.5); 
         }
 
         .btn:active {
@@ -125,10 +125,10 @@ const html = `
         }
 
         .spinner {
-            width: 40px;
-            height: 40px;
+            width: 44px;
+            height: 44px;
             border: 4px solid rgba(255,255,255,0.1);
-            border-left-color: #00f2fe;
+            border-left-color: #8b7cf7;
             border-radius: 50%;
             animation: spin 1s linear infinite;
             margin: 0 auto 15px auto;
@@ -139,7 +139,7 @@ const html = `
         }
 
         .loader-text {
-            color: #4facfe;
+            color: #c4b5fd;
             font-weight: 600;
             font-size: 1.1rem;
         }
@@ -147,7 +147,7 @@ const html = `
         .loader-subtext {
             font-size: 0.85rem;
             color: rgba(255,255,255,0.6);
-            margin-top: 5px;
+            margin-top: 6px;
         }
 
         .logo-icon {
@@ -157,14 +157,14 @@ const html = `
         }
 
         .footer-credit {
-            margin-top: 30px;
-            font-size: 0.9rem;
+            margin-top: 32px;
+            font-size: 0.88rem;
             color: rgba(255, 255, 255, 0.5);
             font-weight: 500;
         }
         
         .footer-credit a {
-            color: #4facfe;
+            color: #a78bfa;
             text-decoration: none;
             font-weight: 700;
         }
@@ -178,11 +178,12 @@ const html = `
     <div class="glass-panel">
         <div class="logo-icon">🎓</div>
         <h1>GA<span class="accent-text">IA</span></h1>
+        <p class="subtitle">Sınav Hazırlık ve İnteraktif İstatistik Platformu</p>
         
         <div class="features">
             <span class="feature-badge">Yapay Zeka Destekli</span>
-            <span class="feature-badge">Anlık Geri Bildirim</span>
-            <span class="feature-badge">Gelişmiş İstatistikler</span>
+            <span class="feature-badge">Anlık Analiz</span>
+            <span class="feature-badge">Pomodoro Odak</span>
         </div>
         
         <button id="startBtn" class="btn" onclick="startApp()">
@@ -193,7 +194,7 @@ const html = `
         <div id="loader" class="loader-container">
             <div class="spinner"></div>
             <div class="loader-text">Geliştirme sunucusu başlatılıyor...</div>
-            <div class="loader-subtext">Bu işlem birkaç saniye sürebilir, lütfen bekleyin. Otomatik olarak yönlendirileceksiniz.</div>
+            <div class="loader-subtext">Vite sunucusu hazırlanıyor, otomatik yönlendirileceksiniz.</div>
         </div>
 
         <div class="footer-credit">
@@ -218,15 +219,14 @@ const html = `
                             loaderText.textContent = "Sunucu hazırlanıyor" + ".".repeat(dotCount);
                         }, 500);
 
-                        // Wait a bit for Vite to compile and start completely
                         setTimeout(() => {
                             clearInterval(interval);
                             window.location.href = data.url;
-                        }, 3000);
+                        }, 2500);
                     }
                 })
                 .catch(err => {
-                    alert("Sunucu başlatılırken bir hata oluştu. Lütfen komut satırını kontrol edin.");
+                    alert("Sunucu başlatılırken bir hata oluştu. Lütfen konsolu kontrol edin.");
                     document.getElementById('startBtn').style.display = 'inline-flex';
                     document.getElementById('loader').style.display = 'none';
                 });
@@ -246,12 +246,12 @@ const server = http.createServer((req, res) => {
             const nmDir = path.join(appDir, 'node_modules');
             
             if (!fs.existsSync(nmDir)) {
-                console.log("-> node_modules klasörü bulunamadı. Bağımlılıklar yükleniyor, lütfen bekleyin...");
+                console.log("-> node_modules klasörü bulunamadı. Bağımlılıklar yükleniyor...");
                 try {
                     execSync('npm install', { cwd: appDir, stdio: 'inherit' });
                     console.log("-> Bağımlılıklar başarıyla yüklendi.");
                 } catch (e) {
-                    console.error("-> npm install sırasında hata oluştu:", e);
+                    console.error("-> npm install hatası:", e);
                 }
             }
 
@@ -283,7 +283,6 @@ server.listen(PORT, () => {
     console.log(`Tarayıcınızda şu adresi açın: http://localhost:${PORT}`);
     console.log(`=================================================\n`);
     
-    // Automatically open browser
-    const startCmd = (process.platform == 'darwin' ? 'open' : process.platform == 'win32' ? 'start' : 'xdg-open');
+    const startCmd = (process.platform === 'darwin' ? 'open' : process.platform === 'win32' ? 'start' : 'xdg-open');
     require('child_process').exec(startCmd + ' http://localhost:' + PORT);
 });

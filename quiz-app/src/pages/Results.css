@@ -1,7 +1,7 @@
 .results-container {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
-  padding: 1rem 1.5rem 4rem;
+  padding: 1rem 1.5rem 5rem;
 }
 
 .results-empty-container {
@@ -11,6 +11,9 @@
 /* ── Header ── */
 .results-header {
   margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .results-title {
@@ -27,7 +30,21 @@
 
 .results-subtitle {
   color: var(--text-muted);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+}
+
+.elapsed-time-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 4px 14px;
+  border-radius: 50px;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--border-color);
 }
 
 /* ── Dashboard ── */
@@ -35,14 +52,14 @@
   display: flex;
   align-items: center;
   gap: 3rem;
-  padding: 3rem;
+  padding: 2.5rem 3rem;
   margin-bottom: 3rem;
 }
 
 .score-chart-wrapper {
   flex-shrink: 0;
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
   position: relative;
 }
 
@@ -64,14 +81,14 @@
 }
 
 .percent-value {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.04em;
 }
 
 .percent-label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -82,7 +99,7 @@
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .stat-card {
@@ -108,7 +125,7 @@
 
 .success-bg { background: rgba(16, 185, 129, 0.15); color: var(--success); }
 .error-bg { background: rgba(239, 68, 68, 0.15); color: var(--error); }
-.neutral-bg { background: rgba(108, 92, 231, 0.15); color: var(--accent); }
+.neutral-bg { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
 
 .stat-info {
   display: flex;
@@ -133,6 +150,26 @@
   margin-bottom: 3rem;
 }
 
+.review-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.review-section-header h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.review-section-header p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
 .review-list {
   display: flex;
   flex-direction: column;
@@ -144,10 +181,14 @@
   position: relative;
 }
 
+.review-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
 .review-q-badge {
-  position: absolute;
-  top: -12px;
-  left: 32px;
   background: var(--bg-tertiary);
   color: var(--text-secondary);
   border: 1px solid var(--border-color);
@@ -157,12 +198,23 @@
   font-weight: 700;
 }
 
+.starred-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--warning);
+  background: rgba(245, 158, 11, 0.1);
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
 .review-q-text {
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
   line-height: 1.5;
 }
 
@@ -248,6 +300,7 @@
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 /* ── Filters ── */
@@ -267,6 +320,8 @@
   font-weight: 600;
   cursor: pointer;
   transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
 }
 
 .filter-btn:hover {
@@ -289,8 +344,8 @@
   }
   .score-stats { width: 100%; grid-template-columns: 1fr; }
   .review-card { padding: 1.5rem; }
-  .review-q-badge { left: 1.5rem; }
   .compare-item { min-width: 100%; }
   .results-actions { flex-direction: column; }
   .results-actions button { width: 100%; justify-content: center; }
+  .review-section-header { flex-direction: column; align-items: flex-start; }
 }

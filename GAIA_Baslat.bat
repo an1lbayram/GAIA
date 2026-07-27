@@ -1,11 +1,11 @@
 @echo off
-chcp 1254 >nul
-title GAIA Başlatıcı
-
+chcp 65001 >nul
+title GAIA BaÅŸlatÄ±cÄ±
+cls
 echo ===================================================
-echo   GAIA Başlatıcı
-echo   Lütfen açılan tarayıcı penceresindeki
-echo   "Uygulamayı Başlat" butonuna tıklayın.
+echo   GAIA SÄ±nav HazÄ±rlÄ±k Platformu
+echo   LÃ¼tfen aÃ§Ä±lan tarayÄ±cÄ± penceresindeki
+echo   "UygulamayÄ± BaÅŸlat" butonuna tÄ±klayÄ±n.
 echo ===================================================
 
 node launcher.js

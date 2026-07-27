@@ -19,7 +19,7 @@
 .footer-left {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .footer-sparkle {
@@ -34,18 +34,21 @@
   letter-spacing: 0.04em;
 }
 
+.footer-version {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--accent-glow);
+  color: var(--accent);
+}
+
 .footer-center {
   display: flex;
   align-items: center;
   gap: 6px;
   font-size: 0.85rem;
   color: var(--text-muted);
-}
-
-.footer-heart {
-  color: #e17055;
-  fill: #e17055;
-  animation: heartPulse 2s ease-in-out infinite;
 }
 
 .footer-author {
@@ -85,11 +88,6 @@
 .footer-social:hover {
   color: var(--accent);
   background: var(--accent-glow);
-}
-
-@keyframes heartPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.15); }
 }
 
 @keyframes sparkle {

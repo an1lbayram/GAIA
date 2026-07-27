@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Timer, Play, Pause, RotateCcw, ChevronDown, Settings } from 'lucide-react';
 import './Pomodoro.css';
 
@@ -27,7 +27,7 @@ const Pomodoro = ({ isOpen, setIsOpen }) => {
     return audioCtxRef.current;
   };
 
-  const playSound = (freq, duration, type = 'sine', volume = 0.15) => {
+  const playSound = useCallback((freq, duration, type = 'sine', volume = 0.15) => {
     try {
       const ctx = getAudioCtx();
       const osc = ctx.createOscillator();
@@ -43,8 +43,10 @@ const Pomodoro = ({ isOpen, setIsOpen }) => {
       gain.connect(ctx.destination);
       osc.start();
       osc.stop(ctx.currentTime + duration);
-    } catch (e) { /* silent */ }
-  };
+    } catch {
+      /* silent catch */
+    }
+  }, []);
 
   const playStartSound = () => {
     playSound(523, 0.08, 'sine', 0.12);
@@ -52,15 +54,14 @@ const Pomodoro = ({ isOpen, setIsOpen }) => {
     setTimeout(() => playSound(784, 0.12, 'sine', 0.1), 160);
   };
 
-  const playAlarm = () => {
-    // 5 loud double-beeps
+  const playAlarm = useCallback(() => {
     for (let i = 0; i < 5; i++) {
       setTimeout(() => {
         playSound(980, 0.25, 'square', 0.4);
         setTimeout(() => playSound(760, 0.25, 'square', 0.4), 250);
       }, i * 600);
     }
-  };
+  }, [playSound]);
 
   useEffect(() => {
     let interval = null;
@@ -69,36 +70,32 @@ const Pomodoro = ({ isOpen, setIsOpen }) => {
     } else if (isActive && timeLeft === 0) {
       playAlarm();
       
-      if (mode === 'work') {
-        const nextCycle = cycleCount + 1;
-        setCycleCount(nextCycle);
-        if (nextCycle % 4 === 0) {
-          setMode('longBreak');
-          setTimeLeft(preset.longBreak * 60);
+      const timerId = setTimeout(() => {
+        if (mode === 'work') {
+          setCycleCount(prev => {
+            const nextCycle = prev + 1;
+            if (nextCycle % 4 === 0) {
+              setMode('longBreak');
+              setTimeLeft(preset.longBreak * 60);
+            } else {
+              setMode('shortBreak');
+              setTimeLeft(preset.shortBreak * 60);
+            }
+            return nextCycle;
+          });
         } else {
-          setMode('shortBreak');
-          setTimeLeft(preset.shortBreak * 60);
+          setMode('work');
+          setTimeLeft(preset.work * 60);
         }
-      } else {
-        // finished shortBreak or longBreak
-        setMode('work');
-        setTimeLeft(preset.work * 60);
-      }
-      
-      // Auto continue next cycle
-      setIsActive(true);
-    }
-    return () => clearInterval(interval);
-  }, [isActive, timeLeft, mode, cycleCount, preset]);
+        setIsActive(true);
+      }, 0);
 
-  // If preset changes while stopped
-  useEffect(() => {
-    if (!isActive) {
-      if (mode === 'work') setTimeLeft(preset.work * 60);
-      else if (mode === 'shortBreak') setTimeLeft(preset.shortBreak * 60);
-      else if (mode === 'longBreak') setTimeLeft(preset.longBreak * 60);
+      return () => clearTimeout(timerId);
     }
-  }, [presetIdx]);
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [isActive, timeLeft, mode, preset, playAlarm]);
 
   const toggleTimer = () => {
     if (!isActive) playStartSound();
@@ -120,6 +117,14 @@ const Pomodoro = ({ isOpen, setIsOpen }) => {
     else if (m === 'longBreak') setTimeLeft(preset.longBreak * 60);
   };
 
+  const handlePresetSelect = (idx) => {
+    setPresetIdx(idx);
+    setShowSettings(false);
+    setIsActive(false);
+    setMode('work');
+    setTimeLeft(PRESETS[idx].work * 60);
+  };
+
   const fmt = (s) => {
     const m = Math.floor(s / 60);
     return `${m.toString().padStart(2, '0')}:${(s % 60).toString().padStart(2, '0')}`;
@@ -131,7 +136,7 @@ const Pomodoro = ({ isOpen, setIsOpen }) => {
     return preset.longBreak * 60;
   };
 
-  const progress = ((getDuration() - timeLeft) / getDuration()) * 100;
+  const progress = Math.min(100, Math.max(0, ((getDuration() - timeLeft) / getDuration()) * 100));
 
   if (!isOpen) return null;
 
@@ -162,16 +167,9 @@ const Pomodoro = ({ isOpen, setIsOpen }) => {
                   type="radio" 
                   name="preset" 
                   checked={presetIdx === idx}
-                  onChange={() => {
-                    setPresetIdx(idx);
-                    setShowSettings(false);
-                    if (!isActive) {
-                      setMode('work');
-                      setTimeLeft(PRESETS[idx].work * 60);
-                    }
-                  }}
+                  onChange={() => handlePresetSelect(idx)}
                 />
-                <span>{p.label}</span>
+                <span>{p.label} dk</span>
               </label>
             ))}
           </div>
@@ -197,10 +195,10 @@ const Pomodoro = ({ isOpen, setIsOpen }) => {
           </div>
 
           <div className="pomo-controls">
-            <button onClick={resetTimer} className="pomo-btn" aria-label="Sıfırla">
+            <button onClick={resetTimer} className="pomo-btn" aria-label="Sıfırla" title="Sıfırla">
               <RotateCcw size={16} />
             </button>
-            <button onClick={toggleTimer} className="pomo-btn pomo-play" aria-label="Oynat/Duraklat">
+            <button onClick={toggleTimer} className="pomo-btn pomo-play" aria-label="Oynat/Duraklat" title="Oynat/Duraklat">
               {isActive ? <Pause size={18} /> : <Play size={18} />}
             </button>
           </div>
