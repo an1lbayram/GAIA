@@ -13,13 +13,13 @@ const Footer = () => {
         
         <div className="footer-center">
           <span>Created by</span>
-          <a href="https://an1lbayram.github.io/" target="_blank" rel="noopener noreferrer" className="footer-author">
+          <a href="https://an1lbayram-github-io.vercel.app/" target="_blank" rel="noopener noreferrer" className="footer-author">
             an1lbayram
           </a>
         </div>
         
         <div className="footer-right">
-          <a href="https://an1lbayram.github.io/" target="_blank" rel="noopener noreferrer" className="footer-social" aria-label="Website">
+          <a href="https://an1lbayram-github-io.vercel.app/" target="_blank" rel="noopener noreferrer" className="footer-social" aria-label="Website">
             <ExternalLink size={16} />
           </a>
         </div>

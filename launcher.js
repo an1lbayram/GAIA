@@ -197,7 +197,7 @@ const html = `
         </div>
 
         <div class="footer-credit">
-            Created by <a href="https://an1lbayram.github.io/" target="_blank" rel="noopener noreferrer">an1lbayram</a>
+            Created by <a href="https://an1lbayram-github-io.vercel.app/" target="_blank" rel="noopener noreferrer">an1lbayram</a>
         </div>
     </div>
 
