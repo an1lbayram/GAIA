@@ -1,59 +1,110 @@
-# GAIA - Sınav Hazırlık Platformu 🎓
+# 🎓 GAIA - Sınav Hazırlık ve Soru Çözüm Platformu
 
-Modern, hızlı ve interaktif bir Sınav Hazırlık ve Soru Çözüm uygulaması. Bu proje, üniversite derslerine ait (Bilgisayar Ağları, Makine Öğrenmesi, Görsel Programlama vb.) PDF formatındaki sınav sorularının yapay zeka destekli OCR yöntemleriyle ayrıştırılıp, modern bir web arayüzünde çözülebilmesini sağlamak amacıyla geliştirilmiştir.
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-Ready-646CFF?logo=vite)
+![Chart.js](https://img.shields.io/badge/Chart.js-4-FF6384?logo=chartdotjs)
+![PWA](https://img.shields.io/badge/PWA-Supported-success?logo=pwa)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+**GAIA**, üniversite ve akademik sınavlara hazırlanan öğrenciler için geliştirilmiş modern, hızlı ve interaktif bir sınav hazırlık ve soru çözüm platformudur. PDF formatındaki çıkmış sınav sorularının yapay zeka destekli OCR (EasyOCR) yöntemleriyle ayrıştırılıp, modern bir web arayüzünde çözülebilmesini sağlar.
+
+---
 
 ## ✨ Özellikler
 
-- **Modern ve Şık Arayüz (UI/UX):** "Glassmorphism" (Cam efekti) tasarımı, akıcı animasyonlar, "Yukarı Çık" butonu ve tam responsive (mobil uyumlu) yapı.
-- **Karanlık / Aydınlık Mod (Dark & Light Mode):** Göz yormayan, cihaz tercihine veya kullanıcı seçimine göre değişebilen özel renk paletli tema desteği.
-- **Gelişmiş Pomodoro Sayacı:** Çalışma seanslarınızı yönetmeniz için menüye entegre edilmiş akıllı zamanlayıcı. 
-  - *Otomatik Döngü Takibi:* 4 çalışma seansından sonra otomatik büyük mola.
-  - *Özelleştirilebilir Süreler:* 25/5, 40/10 veya 90/30 (Ders/Mola) dakika seçenekleri.
-  - *Sesli Bildirim:* Molaya girerken ve derse başlarken çalan yüksek sesli alarm sekansı.
-- **Sınav Çözüm Deneyimi:** Soruları çözerken "Boş Bırak ve Geç" seçeneğini kullanabilirsiniz. Dilerseniz testi erken bitirebilirsiniz (boş bırakılan sorular uyarısı ile birlikte). Soruların doğru ve yanlış cevaplarına ait açıklamalar anında sunulur.
-- **Gelişmiş Sonuç Ekranı:** Test bitiminde başarı oranınız dairesel barlar ve **Chart.js** pasta grafikleri ile görselleştirilir. Doğru, yanlış ve boş yaptığınız sorular detaylıca listelenir.
-- **Kapsamlı Geçmiş Yönetimi:** Çözdüğünüz tüm testler tarayıcıya kaydedilir. Geçmiş sayfasından her bir testin "Doğru, Yanlış, Boş" oranlarını istatistiksel olarak görebilir ve isterseniz silebilirsiniz.
-- **PWA (Progressive Web App) Desteği:** Uygulamayı telefonunuza veya bilgisayarınıza normal bir uygulama gibi indirebilir, önbelleğe alınan verilerle kullanmaya devam edebilirsiniz.
+- 🎨 **Glassmorphism UI/UX:** Şık cam efektli tasarım, akıcı animasyonlar ve %100 mobil uyumlu (responsive) arayüz.
+- 🌙 **Karanlık / Aydınlık Mod (Dark & Light Mode):** Göz yormayan, cihaz seçimine göre otomatik uyum sağlayan tema desteği.
+- ⏱️ **Gelişmiş Pomodoro Sayacı:** Çalışma seanslarınızı yönetmek için entegre zamanlayıcı:
+  - Otomatik döngü takibi (4 seanstan sonra büyük mola).
+  - Özelleştirilebilir süreler (25/5, 40/10, 90/30).
+  - Sesli bildirim ve alarm sekansı.
+- 📝 **İnteraktif Sınav Deneyimi:** Soruları boş bırakma, anında açıklama görüntüleme ve test tamamlama seçenekleri.
+- 📊 **Detaylı İstatistik ve Grafik:** Chart.js pasta grafikleri ve başarı yüzdesi göstergeleri.
+- 💾 **Geçmiş Yönetimi:** Çözülen tüm testler yerel olarak saklanır; geçmiş başarı istatistikleri incelenebilir.
+- 📱 **PWA Desteği:** Masaüstü veya mobil cihazlara uygulama olarak yüklenebilir, offline çalışır.
 
-## 🛠️ Kullanılan Teknolojiler
+---
 
-- **Frontend Core:** React, Vite
-- **Styling:** Vanilla CSS (CSS Variables, Glassmorphism), Lucide React (İkonlar)
-- **Veri Görselleştirme:** Chart.js, react-chartjs-2
-- **State Management & Routing:** React Router DOM, React Context (Hooks)
-- **Data Pipeline (Arka Plan İşlemi):** EasyOCR (Python) - Taranmış resim tabanlı PDF'lerden soru çekimi için kullanılmıştır.
+## 💻 Sistem Gereksinimleri
+
+1. **Node.js** (v18.0.0 veya üzeri): [Node.js İndir](https://nodejs.org/)
+2. **Git**: [Git İndir](https://git-scm.com/)
+
+---
 
 ## 🚀 Kurulum ve Çalıştırma
 
-Projeyi bilgisayarınızda çalıştırmak için Node.js ortamına veya özel Node kurucumuza (`launcher.js`) ihtiyacınız vardır.
+### ⚡ Tek Satırda Kurulum ve Çalıştırma (Hızlı Başlangıç)
 
-### Adımlar
+Terminalinizde (PowerShell / CMD) aşağıdaki komutu yapıştırarak projeyi clone'layabilir ve anında çalıştırabilirsiniz:
 
-1. Gerekli bağımlılıkları indirmek ve uygulamayı başlatmak için ana dizindeki `launcher.js` dosyasını çalıştırın:
-   ```bash
-   node launcher.js
-   ```
-2. Başlatıcı ekran (`http://localhost:3050`) üzerinden **"Uygulamayı Başlat"** butonuna tıklayın. Sistem `quiz-app` klasöründeki bağımlılıkları otomatik kontrol edip yükleyecek ve Vite geliştirme sunucusunu (`http://localhost:5173/`) ayağa kaldıracaktır.
+```bash
+git clone https://github.com/an1lbayram/GAIA.git && cd GAIA && node launcher.js
+```
 
-3. Eğer manuel kurmak isterseniz:
-   ```bash
-   cd quiz-app
-   npm install
-   npm run dev
-   ```
+*(Veya manuel npm çalıştırması):*
+```bash
+git clone https://github.com/an1lbayram/GAIA.git && cd GAIA && npm run install && npm run dev
+```
 
-4. Üretime Hazır Hale Getirme (Build):
-   ```bash
-   cd quiz-app
-   npm run build
-   ```
-   Bu komut sonucunda `dist` klasörü oluşturulur ve uygulamanız herhangi bir statik sunucuda (Vercel, Netlify, Github Pages vb.) yayınlanmaya hazır hale gelir.
+---
 
-## 🔒 Güvenlik ve Performans Notları
-- Bu proje, statik (istemci taraflı) bir uygulama olarak tasarlanmıştır ve backend gerektirmez. JSON veritabanı (`src/data/questions.json`) üzerinden okuma yapar.
-- PWA yapısı sayesinde performansı oldukça yüksektir.
+### 📋 Adım Adım Kurulum (Hiç Bilmeyenler İçin)
 
-<br>
-<p align="center">
-  <b>Created by <a href="https://an1lbayram.github.io/">an1lbayram</a></b>
-</p>
+#### 1️⃣ Terminal / Komut Satırını Açın
+Windows Başlat menüsünden `PowerShell` veya `CMD` uygulamasını açın.
+
+#### 2️⃣ Repoyu Klonlayın
+Projeyi bilgisayarınıza indirmek için:
+```bash
+git clone https://github.com/an1lbayram/GAIA.git
+```
+
+#### 3️⃣ Proje Klasörüne Geçin
+```bash
+cd GAIA
+```
+
+#### 4️⃣ Başlatıcıyı (Launcher) Çalıştırın
+Sistemdeki paketleri otomatik kontrol edip uygulamayı başlatmak için:
+```bash
+node launcher.js
+```
+*(Windows kullanıcıları alternatif olarak `GAIA_Baslat.bat` dosyasına çift tıklayabilir).*
+
+#### 5️⃣ Uygulamayı Açın
+Tarayıcınızda açılan başlatıcı ekranından **"Uygulamayı Başlat"** butonuna basın. Vite geliştirme sunucusu (`http://localhost:5173`) otomatik açılacaktır!
+
+---
+
+## 🛠️ Derleme ve Yayınlama (Build)
+
+Uygulamayı üretime hazır statik paket haline getirmek için:
+
+```bash
+npm run build
+```
+Oluşan `quiz-app/dist` klasörünü Vercel, Netlify veya GitHub Pages üzerinde yayınlayabilirsiniz.
+
+---
+
+## 📂 Proje Yapısı
+
+```text
+GAIA/
+├── GAIA_Baslat.bat           # Windows tek tıkla başlatıcı
+├── launcher.js               # Node.js otomatik kurucu ve başlatıcı
+├── ocr_pdfs.py               # PDF sorularını okuyan Python EasyOCR betiği
+├── parse_ocr.py              # OCR çıktısını JSON soru formatına dönüştürücü
+└── quiz-app/                 # React + Vite ana uygulama
+    ├── src/                  # Bileşenler, Pomodoro, Grafikler, Soru bankası
+    └── package.json          # Uygulama bağımlılıkları
+```
+
+---
+
+## 📄 Lisans
+
+Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
+
+**Geliştirici:** [Anıl Bayram](https://github.com/an1lbayram)
