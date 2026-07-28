@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Quiz from './pages/Quiz';
@@ -65,6 +66,7 @@ function App() {
             <ArrowUp size={22} />
           </button>
         )}
+        <Analytics />
       </div>
     </Router>
   );
