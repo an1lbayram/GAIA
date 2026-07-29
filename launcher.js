@@ -3,7 +3,16 @@ const { spawn, execSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
-const PORT = process.env.PORT || 3050;
+const DEFAULT_PORT = 3050;
+let PORT = DEFAULT_PORT;
+if (process.env.PORT !== undefined) {
+    const parsedPort = parseInt(process.env.PORT, 10);
+    if (!Number.isNaN(parsedPort) && parsedPort >= 1 && parsedPort <= 65535) {
+        PORT = parsedPort;
+    } else {
+        console.warn(`-> Geçersiz PORT değeri "${process.env.PORT}". Varsayılan ${DEFAULT_PORT} kullanılıyor.`);
+    }
+}
 let viteProcess = null;
 
 const html = `
@@ -241,6 +250,19 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
         res.end(html);
     } else if (req.url === '/start' && req.method === 'POST') {
+        const allowedOrigin = `http://localhost:${PORT}`;
+        const origin = req.headers['origin'];
+        const referer = req.headers['referer'];
+        const isAllowedOrigin = origin === allowedOrigin;
+        const isAllowedReferer = typeof referer === 'string' && referer.indexOf(allowedOrigin + '/') === 0;
+
+        if (!isAllowedOrigin && !isAllowedReferer) {
+            console.warn(`-> /start isteği reddedildi (geçersiz origin/referer): origin=${origin} referer=${referer}`);
+            res.writeHead(403, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ success: false, error: 'Forbidden: invalid origin' }));
+            return;
+        }
+
         if (!viteProcess) {
             const appDir = path.join(__dirname, 'quiz-app');
             const nmDir = path.join(appDir, 'node_modules');

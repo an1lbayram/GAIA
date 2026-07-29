@@ -7,7 +7,7 @@ import './Quiz.css';
 const shuffleArray = (arr) => {
   const result = [...arr];
   for (let i = result.length - 1; i > 0; i--) {
-    const j = Math.floor((i + 1) * 0.5); // deterministic swap helper if needed or Fisher-Yates
+    const j = Math.floor(Math.random() * (i + 1));
     [result[i], result[j]] = [result[j], result[i]];
   }
   return result;

@@ -44,7 +44,7 @@ git clone https://github.com/an1lbayram/GAIA.git && cd GAIA && node launcher.js
 
 *(Veya manuel npm çalıştırması):*
 ```bash
-git clone https://github.com/an1lbayram/GAIA.git && cd GAIA && npm run install && npm run dev
+git clone https://github.com/an1lbayram/GAIA.git && cd GAIA && npm install && npm run dev
 ```
 
 ---
