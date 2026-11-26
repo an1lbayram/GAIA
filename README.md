@@ -107,4 +107,4 @@ GAIA/
 
 Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
 
-**Geliştirici:** [Anıl Bayram](https://github.com/an1lbayram)
+**Geliştirici:** [Anıl Bayram](https://an1lbayram.vercel.app/) | [GitHub](https://github.com/an1lbayram)
